@@ -1,0 +1,76 @@
+.banner {
+    background-image:linear-gradient(#04040649,rgba(16, 19, 22, 0.254)), url(https://i.ibb.co/hC2hRDB/news3-435x280.jpg);
+    /* background: cover; */
+    width: 100%;
+    height: 800px;
+    background-size: 100% 100%;
+}
+.banner1 {
+    background-image:linear-gradient(#0404062d,rgba(16, 19, 22, 0.159)), url(https://i.ibb.co/gZsCKLF/slide2-635x450.jpg);
+    /* background: cover; */
+    width: 100%;
+    height: 900px;
+   
+    background-size: 100% 100%;
+}
+.banner2 {
+    background-image:linear-gradient(#04040649,rgba(16, 19, 22, 0.254)), url(https://i.ibb.co/j9Y1bBy/slide1-635x450.jpg);
+    /* background: cover; */
+    width: 100%;
+    height: 800px;
+    background-size: 100% 100%;
+}
+/* styles.css */
+.fade-in-down {
+    opacity: 0;
+    animation: fade-in-down-animation 2s ease-in-out forwards;
+  }
+  
+  @keyframes fade-in-down-animation {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-out-down {
+    animation: fade-out-down-animation 2s ease-in-out forwards;
+  }
+  
+  @keyframes fade-out-down-animation {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+  }
+
+  /* styles.css */
+.fade-in-out-text {
+    text-align: center;
+    animation: fade-in-out-animation 8s ease-in-out infinite;
+}
+
+@keyframes fade-in-out-animation {
+    0%, 100% {
+        opacity: 0;
+        transform: translateY(50px);
+        
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+ 
+  
+  
+
+  
