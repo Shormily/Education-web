@@ -177,7 +177,7 @@ const Naves = () => {
                             <NavLink
                               as={NavLink}
                               className="block pb-3 text-gray-950 hover:text-[#991b1b]"
-                              to="/history"
+                              to="/cource"
                             >
                               Courses
                             </NavLink>
@@ -196,7 +196,7 @@ const Naves = () => {
                             <NavLink
                               as={NavLink}
                               className="block pb-3 text-gray-950 hover:text-[#991b1b]"
-                              to="/campus"
+                              to="/calendar"
                             >
                              Calendar
                             </NavLink>
@@ -232,76 +232,15 @@ const Naves = () => {
               <NavLink
                 as={NavLink}
                 className="hover:opacity-50 nav-link cursor-default "
-                to="/service"
+                to="/admission"
               >
                 Addmission
               </NavLink>
-              <div className="absolute top-0 -left-48 transition group-hover:translate-y-5 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-500 ease-in-out group-hover:transform z-50 min-w-[300px] transform">
-                <div className="relative top-6 p-6  bg-[#fdf4ff] rounded-sm w-full">
-                  <div className="w-10 h-10  bg-[#fdf4ff]  transform rotate-45 absolute top-0 z-0 translate-x-0 transition-transform group-hover:translate-x-[12rem] duration-500 ease-in-out rounded-sm "></div>
-
-                  <div className="relative z-10 ">
-                    <div className="grid lg:grid-cols-1 mx-3 ">
-                      <div>
-                        <p className="uppercase  text-gray-500 font-medium text-[13px]">
-                          The Suite
-                        </p>
-                        <ul className="mt-3 text-[15px]">
-                          <li>
-                            <NavLink
-                              as={NavLink}
-                              className="block  p-2 -mx-2 hover:opacity-50 cursor-default rounded-lg hover:bg-gradient-to-br
-                           hover:from-indigo-100
-                           hover:from-pink-200
-                           hover:from-blue-400 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600"
-                              to="/eyeexam"
-                            >
-                              Eye Examination
-                              <p className="text-gray-500 font-normal">
-                                All-in-one
-                              </p>
-                            </NavLink>
-                          </li>
-                          <li>
-                            <NavLink
-                              as={NavLink}
-                              className="block p-2 -mx-2 hover:opacity-50 cursor-default rounded-lg hover:bg-gradient-to-br
-                           hover:from-indigo-100
-                           hover:from-sky-200
-                           hover:from-blue-100 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600"
-                              to="/diagonisis"
-                            >
-                              Diagnosis and treatment
-                              <p className="text-gray-500 font-normal">
-                                Prebuild
-                              </p>
-                            </NavLink>
-                          </li>
-                          <li>
-                            <NavLink
-                              as={NavLink}
-                              className="block p-2 -mx-2 hover:opacity-50 cursor-default rounded-lg hover:bg-gradient-to-br
-                           hover:from-indigo-100
-                           hover:from-pink-200
-                           hover:from-blue-100 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600"
-                              to="/layereye"
-                            >
-                              Laser eye correction
-                              <p className="text-gray-500 font-normal">
-                                All-in-one
-                              </p>
-                            </NavLink>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+           
             </li>
 
             <li className="pr-4 text-white">
-              <NavLink as={NavLink} className="nav-link" to="/dashboard">
+              <NavLink as={NavLink} className="nav-link" to="/news">
                 News
               </NavLink>
             </li>

@@ -14,6 +14,9 @@ import Naves from "./Pages/Home/Navbars/Naves";
 import Table from "./Pages/Home/Acamedic/Cource/Table";
 import Footer from './Pages/Home/Footer/Footer';
 import Calendar from "./Pages/Home/Acamedic/Calendar";
+import Admission from "./Pages/Home/Admission/Admission";
+import News from "./Pages/Home/News/News";
+import Contact from "./Pages/Home/Contact/Cantact";
 function App() {
 
   return (
@@ -23,6 +26,7 @@ function App() {
    <Route path="/" element={<Home />} />
     <Route path="/dashboard" element={<Dashboard />} />
     <Route path="/about" element={  <About /> }/>
+    <Route path="/admission" element={  <Admission /> }/>
     <Route path="/history" element={  <History /> }/>
     <Route path="/administrator" element={<Administrator />} />
     <Route path="/cafetria" element={<Cafetria />} />
@@ -30,6 +34,8 @@ function App() {
     <Route path="/campus" element={<Campus />} />
     <Route path="/cource" element={<Table />} />
     <Route path="/calendar" element={<Calendar />} />
+    <Route path="/news" element={<News />} />
+    <Route path="/contact" element={<Contact />} />
  </Routes>
  <Footer/>
  <ScrollToTop 

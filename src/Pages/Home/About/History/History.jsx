@@ -7,7 +7,7 @@ const History = () => {
     <>
       
       <div className="bg-gray-100  ">
-      <div className="flex pt-24 max-w-[1300px] m-auto">
+      <div className="flex pt-24 max-w-[1300px] px-4 m-auto">
         <NavLink
           as={NavLink}
           className="pb-3 font-medium text-[14px] text-gray-500  hover:text-[#991b1b]"
@@ -30,15 +30,15 @@ const History = () => {
           Administrator
         </NavLink>
       </div>
-        <div className="grid lg:grid-cols-3 gap-4 study-num max-w-[1300px] m-auto">
-          <div className="lg:col-span-2 md:col-span-2">
+        <div className="flex-container p-4 study-num max-w-[1300px] m-auto">
+          <div className="">
             <h1 className="text-4xl mt-12 pb-3">History</h1>
             <p className="text-[21px] text-justify pt-5 pb-5">
               Smart has grown and evolved for 100-plus years, passing many
               milestones and forging traditions along the way.
             </p>
 
-            <div className="flex pb-7">
+            <div className="flex-container pb-7">
               <p className="ft-text mr-8  pt-5 leading-loose text-gray-500 text-justify">
                 Smart is the oldest institution of higher education in the
                 United States, established in 1892 by vote of the Great and
@@ -64,8 +64,8 @@ const History = () => {
               />
             </div>
           </div>
-          <div className="   pt-12    a">
-            <div className="bg-white mx-24">
+          <div className="pt-12 w-full ">
+            <div className="bg-white mx-8 ">
               <div className="max-w-[1200px]  m-auto pb-4 ">
                 <div
                   style={{
@@ -167,7 +167,7 @@ const History = () => {
           </p>
         </p>
       </div>
-      <Timebar/>
+      {/* <Timebar/> */}
     </>
   );
 };

@@ -214,7 +214,9 @@ const Study = () => {
       </section>
       </div>
       
-      </div></div>
+      </div>
+      
+      </div>
       
     </>
   );

@@ -4,7 +4,8 @@ import { NavLink } from "react-router-dom";
 const Campus = () => {
     return (
         <>
-           <div className="bg-gray-100"> <div className="flex pt-24 max-w-[1300px] m-auto">
+           <div className="bg-gray-100 px-4">
+             <div className="flex pt-24 max-w-[1300px] m-auto">
         <NavLink
           as={NavLink}
           className="pb-3 font-medium text-[14px] text-gray-500  hover:text-[#991b1b]"
@@ -27,7 +28,7 @@ const Campus = () => {
           Administrator
         </NavLink>
       </div> 
-      <div className="grid lg:grid-cols-3 gap-4 study-num max-w-[1300px] m-auto">
+      <div className="flex-container study-num max-w-[1300px] m-auto">
           <div className="lg:col-span-2 md:col-span-2">
             <h1 className="text-4xl mt-12 pb-3">Our Campus</h1>
             <p className="text-[21px] text-justify pt-5 pb-2">
@@ -41,8 +42,8 @@ const Campus = () => {
             
             
           </div>
-          <div className="   pt-12    a">
-            <div className="bg-white mx-24">
+          <div className="   pt-12   px-24 w-full">
+            <div className="bg-white ">
               <div className="max-w-[1200px]  m-auto pb-4 ">
                 <div
                   style={{

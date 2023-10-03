@@ -27,15 +27,15 @@ const Cafetria = () => {
             Administrator
           </NavLink>
         </div>
-        <div className="grid lg:grid-cols-3 gap-4 study-num max-w-[1300px] m-auto">
-          <div className="lg:col-span-2 md:col-span-2">
+        <div className="flex-container px-4 study-num max-w-[1300px] m-auto">
+          <div className=" ">
             <h1 className="text-4xl mt-12 pb-3">History</h1>
             <p className="text-[21px] text-justify pt-5 pb-5">
               Smart has grown and evolved for 100-plus years, passing many
               milestones and forging traditions along the way.
             </p>
 
-            <div className="flex pb-7">
+            <div className="flex-container pb-7">
               <p className="ft-text mr-8  pt-5 leading-relaxed text-gray-500 text-justify">
                 Smart is the oldest institution of higher education in the
                 United States, established in 1892 by vote of the Great and
@@ -55,14 +55,14 @@ const Cafetria = () => {
                 Smart firsts and historical snippets.
               </p>
               <img
-                className=" w-80 "
+                className=" lg:w-80 md:w-80 sm:w-full "
                 src="https://i.ibb.co/Q8PHjjG/img3.jpg"
                 alt=""
               />
             </div>
           </div>
-          <div className="   pt-12    a">
-            <div className="bg-white mx-24">
+          <div className="   pt-12 w-full  px-24  a">
+            <div className="bg-white ">
               <div className="max-w-[1200px]  m-auto pb-4 ">
                 <div
                   style={{

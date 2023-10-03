@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 const Administrator = () => {
     return (
         <>
-          <div className="bg-gray-100  ">
+          <div className="bg-gray-100 px-4 ">
       <div className="flex pt-24 max-w-[1300px] m-auto">
         <NavLink
           as={NavLink}
@@ -26,7 +26,7 @@ const Administrator = () => {
           Administrator
         </NavLink>
       </div>
-        <div className="grid lg:grid-cols-3 gap-4 study-num max-w-[1300px] m-auto">
+        <div className="flex-container  gap-4 study-num max-w-[1300px] m-auto">
           <div className="lg:col-span-2 md:col-span-2">
             <h1 className="text-4xl mt-12 pb-3">Administration</h1>
             <p className="text-[21px] text-justify pt-5 pb-2">
@@ -163,8 +163,8 @@ const Administrator = () => {
             </div>
             
           </div>
-          <div className="   pt-12    a">
-            <div className="bg-white mx-24">
+          <div className="   pt-12 w-full  px-24">
+            <div className="bg-white ">
               <div className="max-w-[1200px]  m-auto pb-4 ">
                 <div
                   style={{

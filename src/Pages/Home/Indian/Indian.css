@@ -1,23 +1,4 @@
-.video{
-   position: relative;
-   
-}
-.banner-text{
-   font-family: 'Libre Baskerville', serif;
-   font-weight: 400;
-}
-.video::before{
-   content: "";
-   position: absolute;
-   width: 100%;
-   height: 100%;
-   background-color: rgba(2, 13, 73, 0.582);
-}
-.video-container{
-   width: 1000px;
-    height: 600px;
-    background-size: 100% 100%;
-}
+
 
 .texteras{
    width: 100%;
@@ -27,10 +8,7 @@
    
 }
 
-.flex-container {
-   display: flex;
-   flex-direction: row;
- }
+
 
  /* Button style */
  .button-container {
@@ -74,7 +52,18 @@
    background-color: #01037880;
    color: white;
 }
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
  /* Responsive layout - makes a one column layout instead of a two-column layout */
+ 
+ @media (max-width: 1440px) {
+   .flex-container {
+    flex-direction: row;
+    grid-template-columns: repeat(2,1fr);
+   }
+ }
  @media (max-width: 800px) {
    .flex-container {
      flex-direction: column;
