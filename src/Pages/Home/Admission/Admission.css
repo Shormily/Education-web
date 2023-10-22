@@ -1,14 +1,23 @@
-.admission-grid{
+.admission-grid {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    /* justify-content:center; */
-    grid-gap:2rem;
-    /* text-align: center; */
-    /* width: 90%; */
-    
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
 }
 
-.circel{
+.apply-btn{
+    font-size: 15px;
+    color: #002147;
+    margin-top: 20px;
+    font-weight: 600;
+    width: fit-content;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #991b1b;
+}
+.apply-btn:hover{
+    color: #8c1515;
+}
+
+.circel {
     width: 40px;
     height: 40px;
     margin-right: 15px;
@@ -17,38 +26,36 @@
     border: 1px solid #8c1515;
     border-radius: 200px;
     font-size: 18px;
-    color: #8c1515
+    color: #8c1515;
 }
 
 /* Study side */
-.img-box img{
+.img-box img {
     display: block;
     width: 100%;
     height: 13rem;
     object-fit: cover;
 }
 
-.grids{
+.grids {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    /* justify-content:center; */
-    grid-gap:2rem;
-    /* text-align: center; */
+    grid-template-columns: repeat(4, 1fr);
+
+    grid-gap: 2rem;
     width: 90%;
     margin: auto;
 }
 
-.card{
+.card {
     display: block;
     overflow: hidden;
-    /* border-radius: 0.6rem; */
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
     cursor: pointer;
     transition: 0.2s;
     position: relative;
 }
 
-.card-contents{
+.card-contents {
     position: absolute;
     background-color: #002147c8;
     bottom: 0;
@@ -59,72 +66,74 @@
     transition: 0.7s;
 }
 
-.card-contents h1{
+.card-contents h1 {
     margin-left: 20px;
     padding-top: 11px;
     font-weight: 600;
     text-transform: capitalize;
 }
 
-
-.card-contents p{
-    font-family: 'Manrope', sans-serif;
+.card-contents p {
+    font-family: "Manrope", sans-serif;
     font-weight: 400;
     font-size: 15px;
     line-height: 1.5rem;
     padding: 1.2rem;
 }
 
-.card-contents:hover{
+.card-contents:hover {
     height: 100%;
     transition: 0.4s;
 }
 
-.video{
+.video {
     position: relative;
-   
-    
- }
- .banner-text{
-    font-family: 'Libre Baskerville', serif;
+}
+.banner-text {
+    font-family: "Libre Baskerville", serif;
     font-weight: 400;
- }
- .video::before{
+}
+.video::before {
     content: "";
-    /* position: absolute; */
+    
     width: 100%;
     height: 100%;
     background-color: rgba(2, 13, 73, 0.582);
- }
- .video-container{
-   max-width: 100% !important;
-     vertical-align: baseline !important;
-     /* background-size: 100% 100%; */
- }
-
+}
+.video-container {
+    max-width: 100% !important;
+    vertical-align: baseline !important;
+}
 
 /* ====responsive==== */
-@media (max-width:1332px) {
-    .admission-grid{
-        grid-template-columns: repeat(2,1fr);
+@media (max-width: 1332px) {
+    .admission-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 1024px) {
-    .grids{
-        grid-template-columns: repeat(2,1fr);
+    .grids {
+        grid-template-columns: repeat(2, 1fr);
     }
-    .admission-grid{
-        grid-template-columns: repeat(1,1fr);
+    .admission-grid {
+        grid-template-columns: repeat(1, 1fr);
     }
-    
 }
 @media (max-width: 767px) {
-    .grids{
-        grid-template-columns: repeat(2,1fr);
+    .grids {
+        grid-template-columns: repeat(2, 1fr);
     }
-    .admission-grid{
-        grid-template-columns: repeat(1,1fr);
+    .admission-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 1024px) {
+    .admission-grid img{
+        width: 100% !important;
+        height: auto;
+        background-size: contain;
     }
     
 }

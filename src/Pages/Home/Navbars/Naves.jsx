@@ -37,8 +37,8 @@ const Naves = () => {
                 AboutUS
               </NavLink>
               <div className="absolute  top-0 -left-68 transition group-hover:translate-y-5 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-500 ease-in-out group-hover:transform z-50 min-w-[200px]  transform ">
-                <div className="relative top-6    bg-white rounded-sm w-full">
-                  <div className="max-w-[1200px]  m-auto pb-4 ">
+                <div className="relative top-6 bg-white rounded-sm w-full">
+                  <div className=" m-auto pb-4 ">
                     <div
                       style={{
                         justifyContent: "center",
@@ -51,7 +51,7 @@ const Naves = () => {
                   <div className="w-10 mx-5 bg-white "></div>
 
                   <div className="relative  mx-4">
-                    <div className="grid lg:grid-cols-1 mx-3 ">
+                    <div className="  ">
                       <div>
                         <ul className=" text-[15px] ">
                           <li>
@@ -63,7 +63,7 @@ const Naves = () => {
                               History
                             </NavLink>
                           </li>
-                          <div className="max-w-[1200px]  m-auto pb-4 ">
+                          <div className="w-full  m-auto pb-4 ">
                             <div
                               style={{
                                 justifyContent: "center",
@@ -147,7 +147,7 @@ const Naves = () => {
                 </div>
               </div>
             </li>
-            <li className="pr-4 relative group text-white ">
+             <li className="pr-4 relative group text-white ">
               <NavLink
                 as={NavLink}
                 className="hover:opacity-50 nav-link cursor-default "
@@ -170,7 +170,7 @@ const Naves = () => {
                   <div className="w-10 mx-5 bg-white "></div>
 
                   <div className="relative  mx-4">
-                    <div className="grid lg:grid-cols-1 mx-3 ">
+                    <div className=" mx-3 ">
                       <div>
                         <ul className=" text-[15px] ">
                           <li>
@@ -239,22 +239,78 @@ const Naves = () => {
            
             </li>
 
-            <li className="pr-4 text-white">
-              <NavLink as={NavLink} className="nav-link" to="/news">
+           <li className="pr-4 relative group text-white">
+              <NavLink as={NavLink} className="nav-link" to="">
                 News
               </NavLink>
+              <div className="absolute  top-0 -left-68 transition group-hover:translate-y-5 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-500 ease-in-out group-hover:transform z-50  min-w-[200px]  transform ">
+                <div className="relative top-6    bg-white rounded-sm w-full">
+                  <div className="max-w-[1200px]  m-auto pb-4 ">
+                    <div
+                      style={{
+                        justifyContent: "center",
+                        alignItems: "center",
+                        backgroundColor: "#991b1b",
+                        height: "4px",
+                      }}
+                    />
+                  </div>
+                  <div className="w-10 mx-5 bg-white "></div>
+
+                  <div className="relative  mx-4">
+                    <div className=" mx-3 ">
+                      <div>
+                        <ul className=" text-[15px]  ">
+                          <li >
+                            <NavLink
+                              as={NavLink}
+                              className="block pb-3 text-gray-950 hover:text-[#991b1b]"
+                              to="/news"
+                            >
+                             News
+                            </NavLink>
+                          </li>
+                        
+                          <div className=" pb-4 ">
+                            <div
+                              style={{
+                                justifyContent: "center",
+                                alignItems: "center",
+                                backgroundColor: "#d4d4d8",
+                                height: "1px",
+                              }}
+                            />
+                          </div>                      
+                          <li className="m-auto">
+                            <NavLink
+                              as={NavLink}
+                              className="block pb-3 text-gray-950 hover:text-[#991b1b]"
+                              to="/newsCard"
+                            >
+                            News Grid
+                            </NavLink>
+                           
+                          </li>
+                         
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+           
             </li>
-            <li className="pr-4  text-white">
+             <li className="pr-4  text-white">
               <NavLink as={NavLink} className="nav-link" to="/dashboard">
                 Dashboard
               </NavLink>
             </li>
 
-            <li className="pr-4  text-white">
+           <li className="pr-4  text-white">
               <NavLink as={NavLink} className="nav-link" to="/contact">
                 Contact
               </NavLink>
-            </li>
+            </li> 
           </ul>
         </React.Fragment>
 

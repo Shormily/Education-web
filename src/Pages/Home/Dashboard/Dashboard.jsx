@@ -5,7 +5,7 @@ import { RiSettings4Line } from "react-icons/ri";
 import { TbReportAnalytics } from "react-icons/tb";
 import { AiOutlineUser, AiOutlineHeart } from "react-icons/ai";
 import { FiMessageSquare, FiFolder, FiShoppingCart } from "react-icons/fi";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 const Dashboard = () => {
     const menus = [
@@ -66,9 +66,10 @@ const Dashboard = () => {
         </div>
       </div>
       <div className="m-3 text-xl text-gray-900 font-semibold">
-        Dashboard
+       <Outlet/>
       </div>
     </section>  
+   
         </>
     );
 };

@@ -1,0 +1,16 @@
+.pagination{
+   text-align: center;
+   margin-bottom: 50px;
+}
+
+.flex-card{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-gap: 2rem;
+   max-width: 1500px;
+   margin: auto;
+}
+
+/* .pagination .selected{
+   background-color: rgb(226, 244, 226);
+} */

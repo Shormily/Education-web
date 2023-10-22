@@ -57,8 +57,8 @@ const Admission = () => {
   ];
   return (
     <>
-      <div className="bg-gray-100 px-4">
-        <div className="max-w-[1280px] mx-auto border border-red-500 banner-text  ">
+     <div className="bg-gray-100">
+     <div className="max-w-[1280px] mx-auto   px-4 banner-text  ">
           <div>
             <p className="text-center text-4xl pt-16">Admissions</p>
             <p className="text-center pt-6 pb-6 text-[20px]">
@@ -68,15 +68,15 @@ const Admission = () => {
             </p>
           </div>
 
-          <div className="admission-grid w-full gap-0 pb-16 ">
-            <div className="w-full ">
+          <div className="admission-grid gap-0 pb-16 ">
+            <div className="">
               <img
-                className="w-[300px]"
+                className=""
                 src="https://i.ibb.co/nknnQT6/img9.jpg"
                 alt=""
               />
             </div>
-            <div className="pt-4 w-full">
+            <div className="pt-4">
               <p className="text-gray-500   text-justify text-base">
                 Each applicant to Smart University is considered with great
                 care. We hope you will explore the information in this section
@@ -89,23 +89,24 @@ const Admission = () => {
                 universities’ Early Action and Early Decision programs. You may
                 apply under our Regular Decision program until January 1, 2016.
               </p>
-              <h3 className="text-[15px]  hover:text-red-600  font-semibold pt-11 pb-3 text-[#002147]">
+              <button className="apply-btn">
                 View details and apply
-              </h3>
-              <div className=" pr-96 mr-12 ">
+              </button>
+              
+              {/* <div className=" pr-96 mr-12 ">
                 <div
                   style={{
                     backgroundColor: "#991b1b",
                     height: "3px",
                   }}
                 />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
       </div>
 
-      <div className="video ">
+      <div className="video">
         <div className="w-full h-[600px] overflow-y-hidden ">
           <video
             src="https://s41256.pcdn.co/wp-content/uploads/2023/05/OurCrowd_VideoModule_V3_3.mp4"
@@ -114,9 +115,9 @@ const Admission = () => {
             width="100%"
             loop
             muted
-            className="video-container "
+            className="video-container"
           ></video>
-          <div className="mb-64 p-5 cont-pra text-white text-center texteras ">
+          <div className="mb-64 p-5  cont-pra text-white text-center texteras ">
             <h1 className=" text-2xl ">1M+ contributors in 170+</h1>
             <p>
               provide solutions for real world scenarios, and efficiently

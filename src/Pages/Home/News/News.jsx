@@ -10,6 +10,7 @@ import "./News.css";
 
 // import required modules
 import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
+
 const News = () => {
   const cards = [
     {
@@ -158,65 +159,64 @@ const News = () => {
           Administrator
         </NavLink>
       </div>
-      <div>
-        
-      </div>
-      <div className="  max-w-[1400px] justify-center  p-4 study-num  m-auto">
-        <div className="">
-          {cards?.map((card) => (
-            <>
-              <div className="max-w-sm lg:mb-1 z-20 md:mb-48   m-auto  w-full h-80 lg:max-w-full lg:flex pb-8 md:item-center pt-5">
-                <div
-                  className=" flex-none  shadow-2xl shadow-lg-x bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-                  title="Woman holding a mug"
-                >
-                  <img
-                    className="shadow-2xl lg:h-full  w-96 md:h-48  flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-                    src={card?.img}
-                    alt=""
-                  />
-                </div>
-                <div className="border-r shadow-lg border-b border-l border-gray-100 lg:border-l-0 lg:border-t lg:border-gray-100 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal ">
-                  <div className="mb-8">
-                    <p className="text-sm text-red-700 flex items-center">
-                      <svg
-                        className="fill-current text-gray-500 w-3 h-3 mr-2"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                      >
-                        <path d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
-                      </svg>
-                      ATHLETICS
-                    </p>
-                    <div className="text-gray-900 font-bold text-xl mb-2">
-                      {card?.title}
-                    </div>
-                    <p className="text-gray-700 text-base">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                      exercitationem praesentium nihil.
-                    </p>
-                  </div>
-                  <div className="flex items-center">
+      <div></div>
+
+      <div className="bg-zinc-50">
+        <div className="flex-container gap-24  max-w-[1400px] justify-center  p-4 study-num  m-auto">
+          <div className=" w-full lg:w-[80%]">
+            {cards?.map((card) => (
+              <>
+                <div className="max-w-sm lg:mb-1 z-20 md:mb-48   m-auto  w-full h-80 lg:max-w-full lg:flex pb-8 md:item-center pt-5">
+                  <div
+                    className=" flex-none  shadow-2xl shadow-lg-x bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+                    title="Woman holding a mug"
+                  >
                     <img
-                      className="w-10 h-10 rounded-full mr-4"
-                      src="https://i.ibb.co/cwR1pCL/img13-2.jpg"
-                      alt="Avatar of Jonathan Reinink"
+                      className="shadow-2xl lg:h-full  w-96 md:h-48  flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+                      src={card?.img}
+                      alt=""
                     />
-                    <div className="text-sm">
-                      <p className="text-gray-900 leading-none">
-                        Jonathan Reinink
+                  </div>
+                  <div className="border-r shadow-lg border-b border-l border-gray-100 lg:border-l-0 lg:border-t lg:border-gray-100 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal ">
+                    <div className="mb-8">
+                      <p className="text-sm text-red-700 flex items-center">
+                        <svg
+                          className="fill-current text-gray-500 w-3 h-3 mr-2"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                        >
+                          <path d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
+                        </svg>
+                        ATHLETICS
                       </p>
-                      <p className="text-gray-600">Aug 18</p>
+                      <div className="text-gray-900 font-bold text-xl mb-2">
+                        {card?.title}
+                      </div>
+                      <p className="text-gray-700 text-base">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Voluptatibus quia, nulla! Maiores et perferendis
+                        eaque, exercitationem praesentium nihil.
+                      </p>
+                    </div>
+                    <div className="flex items-center">
+                      <img
+                        className="w-10 h-10 rounded-full mr-4"
+                        src="https://i.ibb.co/cwR1pCL/img13-2.jpg"
+                        alt="Avatar of Jonathan Reinink"
+                      />
+                      <div className="text-sm">
+                        <p className="text-gray-900 leading-none">
+                          Jonathan Reinink
+                        </p>
+                        <p className="text-gray-600">Aug 18</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </>
-          ))}
-        </div>
-      </div>
-      <div className="pt-12 w-full ">
+              </>
+            ))}
+          </div>
+          <div className="pt-12  w-full lg:w-[20%] ">
             <div className="bg-white mx-8 ">
               <div className="max-w-[1200px]  m-auto pb-4 ">
                 <div
@@ -275,7 +275,10 @@ const News = () => {
               <p className=" mx-5 mb-3 mb-4 mt-4 pb-8">Our Teachers</p>
             </div>
           </div>
-      <div className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-4 pt-8 pb-8  max-w-[1300px] m-auto">
+        </div>
+      </div>
+
+      <div className="flex-card gap-4 pt-8 pb-8  max-w-[1300px] m-auto">
         <p className="text-5xl study-num  text-center text-[#002147]">
           <CountUp end={13} duration={100} className="countup-font" />
           <p className="text-[#002147] text-[14px] pt-3 pb-2">
@@ -317,6 +320,7 @@ const News = () => {
           </p>
         </p>
       </div>
+     
     </>
   );
 };

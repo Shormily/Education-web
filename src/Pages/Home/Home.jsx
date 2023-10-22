@@ -11,6 +11,7 @@ const Home = () => {
           {/* <Navbars/>  */}
        
            <Indian/>
+           
           {/* <AutoPlayFadeSlider/>  */}
           <Tab/>
         

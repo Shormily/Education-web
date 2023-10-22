@@ -17,13 +17,14 @@ import Calendar from "./Pages/Home/Acamedic/Calendar";
 import Admission from "./Pages/Home/Admission/Admission";
 import News from "./Pages/Home/News/News";
 import Contact from "./Pages/Home/Contact/Cantact";
+import Newscards from "./Pages/Home/News/Newscards";
 function App() {
 
   return (
     <>
     <Naves/>
     <Routes>
-   <Route path="/" element={<Home />} />
+    <Route path="/" element={<Home />} />
     <Route path="/dashboard" element={<Dashboard />} />
     <Route path="/about" element={  <About /> }/>
     <Route path="/admission" element={  <Admission /> }/>
@@ -35,6 +36,9 @@ function App() {
     <Route path="/cource" element={<Table />} />
     <Route path="/calendar" element={<Calendar />} />
     <Route path="/news" element={<News />} />
+    <Route path="/newsCard" element={<Newscards /> }/>
+     {/* loader={() =>fetch("http://localhost:5000/totalProducts")} */}
+    
     <Route path="/contact" element={<Contact />} />
  </Routes>
  <Footer/>

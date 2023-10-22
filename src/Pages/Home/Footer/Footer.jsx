@@ -35,7 +35,7 @@ const Footer = () => {
 
       <div className="          bg-[#002147] text-white cursor-pointer pt-2  pb-3 ">
         <div
-          className=" grid lg:grid-cols-4   max-w-[1200px] pt-12 m-auto gap-8  md:grid-cols-2 sm:grid-cols-1 m-auto flex flex-wrap items-center lg:justify-between mx-auto p-8 footer-link
+          className=" grid lg:grid-cols-3   max-w-[1200px] pt-12 m-auto gap-8  md:grid-cols-2 sm:grid-cols-1 m-auto flex flex-wrap items-center lg:justify-between mx-auto p-8 footer-link
         "
         >
           <div className="  mb-2 pt-12 text-[14px]">
@@ -288,101 +288,7 @@ const Footer = () => {
               </p>
             </NavLink>
           </div>
-          <div className="  pb-12 mb-12 pt-12 text-[14px]">
-            <p className="ft-text text-gray-400 text-[13px]">QUICK LINKS</p>
-            <NavLink
-              as={NavLink}
-              className="flex pt-6 ft-t text-[#d1d5db]"
-              to="/"
-            >
-              <span className="pt-1 ">
-                <MdOutlineCircle />
-              </span>
-              <p className="hover:text-white mx-2  pb-2 text-gray-400 text-[13px] font-medium ">
-                Academic Calendar
-              </p>
-            </NavLink>
-            <NavLink as={NavLink} className="flex ft-t text-[#d1d5db]" to="/">
-              <span className="pt-1 ">
-                <MdOutlineCircle />
-              </span>
-              <p className="hover:text-white mx-2 pb-2 text-gray-400  text-[13px] font-medium ">
-                Research
-              </p>
-            </NavLink>
-            <NavLink
-              as={NavLink}
-              className="flex pb-2 ft-t text-[#d1d5db]"
-              to="/"
-            >
-              <span className="pt-1 ">
-                <MdOutlineCircle />
-              </span>
-              <p className="hover:text-white mx-2 pb-2 text-gray-400 text-[13px] font-medium ">
-                Timetable
-              </p>
-            </NavLink>
-            <NavLink
-              as={NavLink}
-              className="flex pb-2 ft-t text-[#d1d5db]"
-              to="/"
-            >
-              <span className="pt-1 ">
-                <MdOutlineCircle />
-              </span>
-              <p className="hover:text-white mx-2 pb-2 text-gray-400 text-[13px] font-medium ">
-                News list
-              </p>
-            </NavLink>
-            <NavLink
-              as={NavLink}
-              className="flex pb-2 ft-t text-[#d1d5db]"
-              to="/"
-            >
-              <span className="pt-1 ">
-                <MdOutlineCircle />
-              </span>
-              <p className="hover:text-white mx-2 pb-2 text-gray-400 text-[13px] font-medium ">
-                Events List
-              </p>
-            </NavLink>
-            <NavLink
-              as={NavLink}
-              className="flex pb-2 ft-t text-[#d1d5db]"
-              to="/"
-            >
-              <span className="pt-1 ">
-                <MdOutlineCircle />
-              </span>
-              <p className="hover:text-white mx-2 pb-2 text-gray-400 text-[13px] font-medium ">
-                Shortcodes
-              </p>
-            </NavLink>
-            <NavLink
-              as={NavLink}
-              className="flex pb-2 ft-t text-[#d1d5db]"
-              to="/"
-            >
-              <span className="pt-1 ">
-                <MdOutlineCircle />
-              </span>
-              <p className="hover:text-white mx-2 pb-2 text-gray-400 text-[13px] font-medium ">
-                Typography
-              </p>
-            </NavLink>
-            <NavLink
-              as={NavLink}
-              className="flex pb-2 ft-t text-[#d1d5db]"
-              to="/"
-            >
-              <span className="pt-1 ">
-                <MdOutlineCircle />
-              </span>
-              <p className="hover:text-white mx-2 pb-2 text-gray-400 text-[13px] font-medium ">
-                Shop
-              </p>
-            </NavLink>
-          </div>
+          
           <div className=" pt-12  ">
             <div className="items-center ">
               <img
@@ -437,7 +343,7 @@ const Footer = () => {
               className=" w-full  md:w-auto"
               // id="navbar-default"
             >
-              <ul className="font-medium grid lg:grid-cols-6 md:  md:grid-cols-6 sm:grid-cols-1    ">
+              <ul className="font-medium flex-container   ">
                 <li className="mt-3">
                   <a
                     href=" https://www.linkedin.com/company/cratmateai-technology/?viewAsMember=true "
@@ -495,7 +401,7 @@ const Footer = () => {
             }}
           />
 
-          <p className="text-gray-400 ft-t text-center">
+          <p className="text-white  text-center">
             Copyright © Secondary School. All rights reserved by shormily Raisa
           </p>
         </div>
