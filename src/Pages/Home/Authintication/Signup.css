@@ -1,0 +1,196 @@
+.group {
+    display: flex;
+    line-height: 30px;
+    align-items: center;
+    position: relative;
+   
+}
+
+.input {
+    /* width: 100%; */
+    height: 50px;
+    line-height: 40px;
+    padding: 0 5rem;
+    padding-left: 3rem;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    outline: none;
+    background-color: rgba(5, 95, 198, 0.144);
+    color: #0d0c22;
+    transition: 0.5s ease;
+    width: 100%;
+}
+
+.input::placeholder {
+    color: #5b90da;
+}
+
+.input:focus,
+input:hover {
+    outline: none;
+    border-color: rgba(129, 140, 248);
+    background-color: #fff;
+    box-shadow: 0 0 0 5px rgb(129 140 248 / 30%);
+}
+
+.icon {
+    position: absolute;
+    left: 1rem;
+    fill: none;
+    width: 1rem;
+    height: 1rem;
+}
+
+
+
+/* button */
+
+.login-box {
+    position: absolute;
+    /* transform: translate(-50%, -50%); */
+  
+    box-sizing: border-box;
+    border-radius: 10px;
+    
+}
+.login-box .user-box {
+    position: relative;
+}
+.btnsign{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+   
+    overflow: hidden;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 800;
+    transition: 0.5s;
+    /* width: 180px; */
+    border-radius: 5px; /* margin-top: 40px; */
+    background: #002c5e;
+    color: #fff;
+    border-radius: 5px;
+    /* box-shadow:
+        0 0 5px #002147,
+        0 0 5px #002147,
+        0 0 5px #002147,
+        0 0 5px #002147; */
+}
+
+.textsignup{
+    text-shadow: 2px 2px 10px rgb(93, 5, 5);
+    color: rgb(163, 8, 8);
+    cursor: pointer;
+    font-weight: 700;
+}
+.textsignup:hover{
+    text-shadow: 2px 2px 10px rgb(12, 5, 93);
+    color: rgb(26, 8, 163);
+    cursor: pointer;
+}
+
+.img-shadow{
+    background-color: #002147;
+    border-radius: 10px;
+    width: 450px;
+    margin-top: 50px;
+    transition: 0.9s ease;
+    box-shadow:
+        0 0 50px #c1d5ec,
+        0 0 25px #002147,
+        0 0 50px #52667c,
+        0 0 100px #002147;
+}
+.img-shadow:hover{
+    background-color: #63a7f4;
+    border-radius: 40px;
+    /* box-shadow: none; */
+    transition: 0.9s ease;
+    box-shadow:
+    0 0 25px #2d8dfaa1,
+    0 0 25px #3a90f29b,
+    0 0 50px #3891f7b7,
+    0 0 100px rgba(70, 150, 241, 0.793);
+}
+
+/* Login design */
+.img-shadows{
+   
+    background-color: #002147;
+    border-radius: 10px;
+    width: 450px;
+    margin-top: 50px;
+    transition: 0.9s ease;
+    box-shadow:
+    0 0 50px #002147,
+    0 0 25px #002147,
+    0 0 50px #002147,
+    0 0 100px #002147;
+    
+}
+.img-shadows:hover{
+    background-color: #bfdbfe;
+    border-radius: 20px;
+    /* box-shadow: none; */
+    transition: 0.9s ease;
+    box-shadow:
+    0 0 50px #97c5fc,
+    0 0 25px #78b2f8,
+    0 0 50px #80b6f7,
+    0 0 100px #88b9f5;
+}
+
+.imges {
+    -webkit-filter: hue-rotate(00deg);
+    filter: hue-rotate(190deg);
+}
+/* End */
+.flex-signup{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+
+@media (max-width: 1000px) {
+    .flex-signup {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.btnsign:hover {
+    background: #bfd8f501;
+    color: #0d0c22;
+    border-radius: 5px;
+    box-shadow:
+    0 0 25px #0021476f,
+    0 0 25px #0021475a,
+    0 0 50px #00214758,
+    0 0 100px #00214780;
+}
+
+.btnsign span {
+    position: absolute;
+    display: block;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.btnsign span:nth-child(1) {
+    bottom: 0px;
+    /* left: -100%; */
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #002147);
+    animation: btn-anim1 2s linear infinite;
+}

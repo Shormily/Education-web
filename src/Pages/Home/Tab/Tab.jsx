@@ -658,8 +658,8 @@ const Tab = () => {
   return (
     <>
       {" "}
-      <div className="grid lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 max-w-[1300px] gap-8">
-        <div className="col-span-2  m-auto pt-24  tablet ">
+      <div className=" flex-container max-w-[1640px] gap-12 justify-center m-auto">
+        <div className=" lg:w-[60%]  pt-24  tablet ">
           <div>
             <div className="tab-header ">
               {tabs.map((tab, index) => (
@@ -676,10 +676,11 @@ const Tab = () => {
             </div>
             <div className="tab-content ">{tabs[activeTab].content}</div>
           </div>
+          
         </div>
-        <div className=" pt-24  ">
-          <div className="bg-[#002147] pb-24 pt-12 rounded-lg lg:ml-24 md:ml-2 sm:ml-4 p-2">
-            <div className="max-w-[1200px]  m-auto pb-4 ">
+        <div className=" pt-24   max-w-[40%] hidden lg:block">
+          <div className="bg-[#002147] pb-24 pt-12 rounded-lg  p-2">
+            <div className="  m-auto pb-4 ">
               <img
                 className=" p-3  imgse px-24"
                 src="https://i.ibb.co/vmvYDr0/mailchimp-envelope.png"

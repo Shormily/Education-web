@@ -1,0 +1,169 @@
+.cardesh {
+    width: 350px;
+    height: 150px;
+    /* background: rgb(17, 4, 134); */
+    border-radius: 15px;
+    box-shadow: rgb(0,0,0,0.7) 2px 5px 20px ,rgb(0,0,0,0.7) -5px 0px 250px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    background: linear-gradient(to right, rgb(4, 34, 92), rgb(4, 34, 111));
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+  }
+
+  .polargrid{
+    width: 450px;
+    height: 400px;
+    /* background: rgb(17, 4, 134); */
+    border-radius: 15px;
+    box-shadow: rgb(0,0,0,0.7) 2px 5px 20px ,rgb(0,0,0,0.7) -5px 0px 250px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    background: linear-gradient(to right, rgb(4, 34, 92), rgb(4, 34, 111));
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+  }
+  .barchart{
+    width: 450px;
+    height: 550px;
+    /* background: rgb(17, 4, 134); */
+    border-radius: 15px;
+    box-shadow: rgb(0,0,0,0.7) 2px 5px 20px ,rgb(0,0,0,0.7) -5px 0px 250px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    background: linear-gradient(to right, rgb(4, 34, 92), rgb(4, 34, 111));
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+  }
+  .linechat{
+    /* width: ;
+    height: ; */
+    /* background: rgb(17, 4, 134); */
+    border-radius: 15px;
+    box-shadow: rgb(0,0,0,0.7) 2px 5px 20px ,rgb(0,0,0,0.7) -5px 0px 250px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    /* position: relative;
+    flex-direction: column; */
+    background: linear-gradient(to right, rgb(4, 34, 92), rgb(4, 34, 111));
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+  }
+  
+  .cardesh:hover {
+    box-shadow: rgb(0,0,0) 10px 20px 60px ,rgb(0,0,0) -5px 0px 250px;
+  }
+  .dashbtn:hover {
+    box-shadow: rgb(0,0,0) 10px 20px 60px ,rgb(0,0,0) -5px 0px 250px;
+  }
+
+  .dashbtn {
+    width: 320px;
+    height: 60px;
+    background: rgb(17, 4, 134);
+    border-radius: 27px;
+    box-shadow: rgb(0,0,0,0.7) 2px 5px 20px ,rgb(0,0,0,0.7) -5px 0px 250px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    background: linear-gradient(to right, rgb(4, 34, 92), rgb(4, 34, 111));
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+  }
+
+  /* Dash icon */
+
+  .Dashicn{
+    display: inline-block;
+    height:35px;
+    width: 35px;
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height:35px;
+    border-radius: 50%;
+    background: linear-gradient(#ea77f9f8,rgba(226, 89, 244, 0.837));
+    transition:all 0.5s ease;
+    color: #1a1c24;
+}
+.Dashicn:hover{
+    color: #f0f2fa;
+    background: linear-gradient(#23138af8,rgba(42, 149, 255, 0.837));
+}
+
+.parcent{
+  display: inline-block;
+    height:25px;
+    width: 50px;
+    margin:0 10px 10px 0;
+    text-align: center;
+    border-radius: 10px;
+    background-color:rgba(237, 125, 125, 0.784);
+    transition:all 0.5s ease;
+    color: #fff; 
+    font-size: 10px;
+}
+
+
+/* pie chart */
+
+.chartMenu {
+  width: 100vw;
+  height: 40px;
+  background: #1A1A1A;
+  color: rgba(54, 162, 235, 1);
+}
+.chartMenu p {
+  padding: 10px;
+  font-size: 20px;
+}
+.chartCard {
+  width: 100vw;
+  height: calc(100vh - 40px);
+  background: rgba(54, 162, 235, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chartBox {
+  width: 700px;
+  padding: 20px;
+  border-radius: 20px;
+  border: solid 3px rgba(54, 162, 235, 1);
+  background: white;
+}
+
+/* ====responsive==== */
+@media (max-width: 1332px) {
+  /* .cardesh {
+    width: 200px;
+    height: 150px;
+    background: rgb(17, 4, 134);
+    border-radius: 15px;
+    box-shadow: rgb(0,0,0,0.7) 2px 5px 20px ,rgb(0,0,0,0.7) -5px 0px 250px;
+    color: white;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    background: linear-gradient(to right, rgb(4, 34, 92), rgb(4, 34, 111));
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+  } */
+}

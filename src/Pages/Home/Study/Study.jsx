@@ -16,7 +16,7 @@ const Study = () => {
               <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-2xl hover:shadow-black/10">
                 <div className="h-full ">
                   <img
-                    className=" w-full object-cover transition-transform duration-700 group-hover:rotate-3 group-hover:scale-125"
+                    className=" w-full  object-cover transition-transform duration-700 group-hover:rotate-3 group-hover:scale-125"
                     src="https://i.ibb.co/9rXJ0NZ/media-445x270.jpg"
                     alt=""
                   />

@@ -163,10 +163,10 @@ const News = () => {
 
       <div className="bg-zinc-50">
         <div className="flex-container gap-24  max-w-[1400px] justify-center  p-4 study-num  m-auto">
-          <div className=" w-full lg:w-[80%]">
+          <div className=" w-full lg:w-[80%] ">
             {cards?.map((card) => (
               <>
-                <div className="max-w-sm lg:mb-1 z-20 md:mb-48   m-auto  w-full h-80 lg:max-w-full lg:flex pb-8 md:item-center pt-5">
+                <div className="max-w-sm z lg:mb-1 z-20 md:mb-48   m-auto  w-full h-80 lg:max-w-full lg:flex pb-8 md:item-center pt-5">
                   <div
                     className=" flex-none  shadow-2xl shadow-lg-x bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
                     title="Woman holding a mug"
@@ -278,7 +278,7 @@ const News = () => {
         </div>
       </div>
 
-      <div className="flex-card gap-4 pt-8 pb-8  max-w-[1300px] m-auto">
+      <div className="countup gap-4 pt-8 pb-8  max-w-[1300px] m-auto">
         <p className="text-5xl study-num  text-center text-[#002147]">
           <CountUp end={13} duration={100} className="countup-font" />
           <p className="text-[#002147] text-[14px] pt-3 pb-2">

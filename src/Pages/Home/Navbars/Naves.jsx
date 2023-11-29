@@ -1,20 +1,40 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "./Naves.css";
-import { FaBars } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
-
+import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
+import { IoLogInSharp } from "react-icons/io5";
+import app from "../Authintication/firebaseconfig";
+const auth = getAuth(app);
 const Naves = () => {
   const [nav, setNav] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [user, setUser] = useState(null);
   const handleNav = () => {
     setNav(!nav);
   };
-
+  const logOut = () =>{
+    setLoading(true);
+    return signOut(auth);
+  }
+  useEffect(() =>{
+    const unsubscribe = onAuthStateChanged(auth, currentUser =>{
+          console.log('user observing');
+          setUser(currentUser);
+          setLoading(false)
+      })
+      return () => unsubscribe();
+    }, [])
+    const handleLogOut = () => {
+      logOut()
+        .then(() => {})
+        .catch((err) => console.log(err));
+    };
   return (
     <>
-      <div className="w-full px-2 p-2  naves banner-text  justify-center sticky  top-0 bg-[#002147]    flex  shadow-lg   items-center  absolute z-20 text-slate-950 font-semibold  bg-[#002147]">
-        <NavLink
+      <div className="w-full px-2 p-2  naves banner-text  justify-center sticky  top-0 bg-[#002147]    flex  shadow-lg   items-center  z-20 text-slate-950 font-semibold ">
+      <NavLink
           as={NavLink}
           className="hover:opacity-50  cursor-default "
           to="/"
@@ -27,7 +47,7 @@ const Naves = () => {
         </NavLink>
 
         <React.Fragment>
-          <ul className="hidden  lg:pl-32 md:pl-4 sm:pl-2 sm:flex p-4  ">
+          <ul className="hidden  lg:pl-32 md:pl-4 sm:pl-2 sm:flex p-4">
             <li className="pr-4 relative group   text-white">
               <NavLink
                 as={NavLink}
@@ -147,7 +167,7 @@ const Naves = () => {
                 </div>
               </div>
             </li>
-             <li className="pr-4 relative group text-white ">
+            <li className="pr-4 relative group text-white ">
               <NavLink
                 as={NavLink}
                 className="hover:opacity-50 nav-link cursor-default "
@@ -191,14 +211,14 @@ const Naves = () => {
                                 height: "1px",
                               }}
                             />
-                          </div>                      
+                          </div>
                           <li>
                             <NavLink
                               as={NavLink}
                               className="block pb-3 text-gray-950 hover:text-[#991b1b]"
                               to="/calendar"
                             >
-                             Calendar
+                              Calendar
                             </NavLink>
                             <div className="max-w-[1200px]  m-auto pb-4 ">
                               <div
@@ -217,7 +237,7 @@ const Naves = () => {
                               className="block pb-5 text-gray-950 hover:text-[#991b1b]"
                               to="/ourTeacher"
                             >
-                             Departments
+                              Departments
                             </NavLink>
                           </li>
                         </ul>
@@ -236,11 +256,10 @@ const Naves = () => {
               >
                 Addmission
               </NavLink>
-           
             </li>
 
-           <li className="pr-4 relative group text-white">
-              <NavLink as={NavLink} className="nav-link" to="">
+            <li className="pr-4  relative group text-white">
+              <NavLink as={NavLink} className="nav-link hover:opacity-50" to="">
                 News
               </NavLink>
               <div className="absolute  top-0 -left-68 transition group-hover:translate-y-5 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-500 ease-in-out group-hover:transform z-50  min-w-[200px]  transform ">
@@ -261,16 +280,16 @@ const Naves = () => {
                     <div className=" mx-3 ">
                       <div>
                         <ul className=" text-[15px]  ">
-                          <li >
+                          <li>
                             <NavLink
                               as={NavLink}
                               className="block pb-3 text-gray-950 hover:text-[#991b1b]"
                               to="/news"
                             >
-                             News
+                              News
                             </NavLink>
                           </li>
-                        
+
                           <div className=" pb-4 ">
                             <div
                               style={{
@@ -280,42 +299,87 @@ const Naves = () => {
                                 height: "1px",
                               }}
                             />
-                          </div>                      
+                          </div>
                           <li className="m-auto">
                             <NavLink
                               as={NavLink}
                               className="block pb-3 text-gray-950 hover:text-[#991b1b]"
                               to="/newsCard"
                             >
-                            News Grid
+                              News Grid
                             </NavLink>
-                           
                           </li>
-                         
                         </ul>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-           
             </li>
-             <li className="pr-4  text-white">
-              <NavLink as={NavLink} className="nav-link" to="/dashboard">
+            <li className="pr-4 pt-1  text-white">
+              <NavLink as={NavLink} className="nav-link hover:opacity-50" to="/dashboard">
                 Dashboard
               </NavLink>
             </li>
 
-           <li className="pr-4  text-white">
-              <NavLink as={NavLink} className="nav-link" to="/contact">
+            <li className=" pt-1  text-white">
+              <NavLink as={NavLink} className="nav-link hover:opacity-50" to="/contact">
                 Contact
               </NavLink>
-            </li> 
+            </li>
+          
+          </ul>
+          <ul>
+          <li className="pr-4 pt-1 text-white">
+            {!user?.email && (
+              <NavLink
+                as={NavLink}
+                className=" text-light flex justify-between hover:opacity-50 "
+                to="/signup   "
+                onClick={handleLogOut}
+              >
+                SignIn
+                <IoLogInSharp className="mx-2 mt-1" size="20" />
+              </NavLink>
+            )}
+            {user?.email && (
+              <NavLink
+                onClick={logOut}
+                className="flex justify-between hover:opacity-50 mt-3"
+                to="/login  "
+                as={NavLink}
+              >
+                SignOut
+                <IoLogInSharp className="mx-2 mt-1" size="20" />
+                <span>
+                  {user?.photoURL ? (
+                    <img
+                      className=" w-9 h-9 rounded-full  "
+                      src={user.photoURL}
+                      alt=""
+                    />
+                  ) : (
+                    <small className="text-light ">{user?.displayName}</small>
+                  )}
+                </span>
+              </NavLink>
+            )}   
+            </li>
           </ul>
         </React.Fragment>
 
-        <div onClick={handleNav} className="sm:hidden z-10">
-          <FaBars size={30} className="ml-8 cursor-pointer text-white" />
+        <div  className="sm:hidden z-10">
+          <label className="hamburger" >
+            <input className="hidden" type="checkbox" />
+            <svg onClick={handleNav} viewBox="0 0 32 32">
+              <path
+                className="line line-top-bottom"
+                d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
+              />
+              <path className="line" d="M7 16 27 16" />
+            </svg>
+         
+          </label>
         </div>
         {/* Mobile Menu */}
         <div

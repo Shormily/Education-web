@@ -3,49 +3,10 @@ import "animate.css";
 // import {  Toaster, toast } from "react-hot-toast";
 // import Swal from 'sweetalert2'
 import "./Contact.css";
+
 const Contact = () => {
-  //   const [formData, setFormData] = useState();
-  //   console.log(formData);
-
-  //   const handleInputChange = (e) => {
-  //     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
-
-  //   };
-
-  //   const handleSubmit = async (e) => {
-  //     e.preventDefault();
-
-  // Cratemate-Aid all form data to FormData object
-  // console.log(formData);
-  //     fetch("https://cratemate-server-shormily.onrender.com/send-message", {
-  //       method: "POST",
-  //       body: JSON.stringify(formData),
-  //       headers: {
-  //         "Content-type": "application/json; charset=UTF-8",
-  //       },
-  //     })
-  //       .then((result) => {
-  //         const user = result.user;
-  //         console.log(user);
-
-  //         Swal.fire({
-  //           icon: 'success',
-  //           title: 'Thank you !',
-  //           text:"Your submission has been received",
-  //           showClass: {
-  //             popup: 'animate__animated animate__fadeInDown'
-  //           },
-  //           hideClass: {
-  //             popup: 'animate__animated animate__fadeOutUp'
-  //           }
-  //         })
-  //       })
-  //       .catch((error) => {
-  //         // error.message;
-  //         toast.error(error.message)
-  //       });
-
-  //   };
+  
+  
   const cards = [
     {
       title:
@@ -57,6 +18,8 @@ const Contact = () => {
   return (
     <>
       {/* <Toaster/> */}
+     
+
       <form
       //  onSubmit={handleSubmit}
       >

@@ -116,7 +116,7 @@ const Table = () => {
             </tbody>
           </table>
         </div>
-        <div className="flex-card  gap-4 pt-8 pb-8  max-w-[1400px] m-auto">
+        <div className="countup  gap-4 pt-8 pb-8  max-w-[1400px] m-auto">
         <p className="text-5xl study-num  text-center text-[#002147]">
           <CountUp end={13} duration={100} className="countup-font" />
           <p className="text-[#002147] text-[14px] pt-3 pb-2">

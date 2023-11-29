@@ -50,7 +50,7 @@ const Footer = () => {
               <span className="pt-1 ">
                 <MdOutlineCircle />
               </span>
-              <p className="hover:text-white mx-2 pb-2 text-gray-400 text-[13px] font-medium ">
+              <p className="hover:text-white  pb-2 text-gray-400 text-[13px] font-medium ">
                 History
               </p>
             </NavLink>
@@ -62,7 +62,7 @@ const Footer = () => {
               <span className="pt-1 ">
                 <MdOutlineCircle />
               </span>
-              <p className="hover:text-white mx-2 pb-2 text-gray-400  text-[13px] font-medium ">
+              <p className="hover:text-white  pb-2 text-gray-400  text-[13px] font-medium ">
                 Administration
               </p>
             </NavLink>
@@ -74,7 +74,7 @@ const Footer = () => {
               <span className="pt-1 ">
                 <MdOutlineCircle />
               </span>
-              <p className="hover:text-white mx-2 pb-2 text-gray-400 text-[13px] font-medium ">
+              <p className="hover:text-white  pb-2 text-gray-400 text-[13px] font-medium ">
                 Our Campus
               </p>
             </NavLink>
@@ -86,7 +86,7 @@ const Footer = () => {
               <span className="pt-1 ">
                 <MdOutlineCircle />
               </span>
-              <p className="hover:text-white mx-2 pb-2 text-gray-400 text-[13px] font-medium ">
+              <p className="hover:text-white  pb-2 text-gray-400 text-[13px] font-medium ">
                 Cafeteria
               </p>
             </NavLink>
@@ -98,7 +98,7 @@ const Footer = () => {
               <span className="pt-1 ">
                 <MdOutlineCircle />
               </span>
-              <p className="hover:text-white mx-2 pb-2 text-gray-400 text-[13px] font-medium ">
+              <p className="hover:text-white  pb-2 text-gray-400 text-[13px] font-medium ">
                 Our Teachers
               </p>
             </NavLink>
@@ -110,7 +110,7 @@ const Footer = () => {
               <span className="pt-1 ">
                 <MdOutlineCircle />
               </span>
-              <p className="hover:text-white mx-2 pb-2 text-gray-400 text-[13px] font-medium ">
+              <p className="hover:text-white  pb-2 text-gray-400 text-[13px] font-medium ">
                 Courses
               </p>
             </NavLink>
@@ -122,7 +122,7 @@ const Footer = () => {
               <span className="pt-1 ">
                 <MdOutlineCircle />
               </span>
-              <p className="hover:text-white mx-2 pb-2 text-gray-400 text-[13px] font-medium ">
+              <p className="hover:text-white  pb-2 text-gray-400 text-[13px] font-medium ">
                 Academic Calendar
               </p>
             </NavLink>
@@ -134,7 +134,7 @@ const Footer = () => {
               <span className="pt-1 ">
                 <MdOutlineCircle />
               </span>
-              <p className="hover:text-white mx-2 pb-2 text-gray-400 text-[13px] font-medium ">
+              <p className="hover:text-white  pb-2 text-gray-400 text-[13px] font-medium ">
                 Department
               </p>
             </NavLink>
@@ -146,7 +146,7 @@ const Footer = () => {
               <span className="pt-1 ">
                 <MdOutlineCircle />
               </span>
-              <p className="hover:text-white mx-2 pb-2 text-gray-400 text-[13px] font-medium ">
+              <p className="hover:text-white  pb-2 text-gray-400 text-[13px] font-medium ">
                 Undergraduate Program
               </p>
             </NavLink>
@@ -158,7 +158,7 @@ const Footer = () => {
               <span className="pt-1 ">
                 <MdOutlineCircle />
               </span>
-              <p className="hover:text-white mx-2 pb-2 text-gray-400 text-[13px] font-medium ">
+              <p className="hover:text-white  pb-2 text-gray-400 text-[13px] font-medium ">
                 Contact Us
               </p>
             </NavLink>
@@ -175,7 +175,7 @@ const Footer = () => {
               <span className="pt-1 ">
                 <MdOutlineCircle />
               </span>
-              <p className="hover:text-white mx-2 pb-2 text-gray-400 text-[13px] font-medium ">
+              <p className="hover:text-white  pb-2 text-gray-400 text-[13px] font-medium ">
                 Admission
               </p>
             </NavLink>
@@ -187,7 +187,7 @@ const Footer = () => {
               <span className="pt-1 ">
                 <MdOutlineCircle />
               </span>
-              <p className="hover:text-white mx-2 pb-2 text-gray-400  text-[13px] font-medium ">
+              <p className="hover:text-white  pb-2 text-gray-400  text-[13px] font-medium ">
                 School
               </p>
             </NavLink>
@@ -199,7 +199,7 @@ const Footer = () => {
               <span className="pt-1 ">
                 <MdOutlineCircle />
               </span>
-              <p className="hover:text-white mx-2 pb-2 text-gray-400 text-[13px] font-medium ">
+              <p className="hover:text-white  pb-2 text-gray-400 text-[13px] font-medium ">
                 Event
               </p>
             </NavLink>
@@ -211,7 +211,7 @@ const Footer = () => {
               <span className="pt-1 ">
                 <MdOutlineCircle />
               </span>
-              <p className="hover:text-white mx-2 pb-2 text-gray-400 text-[13px] font-medium ">
+              <p className="hover:text-white  pb-2 text-gray-400 text-[13px] font-medium ">
                 News
               </p>
             </NavLink>
@@ -223,7 +223,7 @@ const Footer = () => {
               <span className="pt-1 ">
                 <MdOutlineCircle />
               </span>
-              <p className="hover:text-white mx-2 pb-2 text-gray-400 text-[13px] font-medium ">
+              <p className="hover:text-white  pb-2 text-gray-400 text-[13px] font-medium ">
                 Applications FAQ
               </p>
             </NavLink>
@@ -235,7 +235,7 @@ const Footer = () => {
               <span className="pt-1 ">
                 <MdOutlineCircle />
               </span>
-              <p className="hover:text-white mx-2 pb-2 text-gray-400 text-[13px] font-medium ">
+              <p className="hover:text-white  pb-2 text-gray-400 text-[13px] font-medium ">
                 Donations
               </p>
             </NavLink>
@@ -247,7 +247,7 @@ const Footer = () => {
               <span className="pt-1 ">
                 <MdOutlineCircle />
               </span>
-              <p className="hover:text-white mx-2 pb-2 text-gray-400 text-[13px] font-medium ">
+              <p className="hover:text-white  pb-2 text-gray-400 text-[13px] font-medium ">
                 Teachers
               </p>
             </NavLink>
@@ -259,7 +259,7 @@ const Footer = () => {
               <span className="pt-1 ">
                 <MdOutlineCircle />
               </span>
-              <p className="hover:text-white mx-2 pb-2 text-gray-400 text-[13px] font-medium ">
+              <p className="hover:text-white  pb-2 text-gray-400 text-[13px] font-medium ">
                 Media
               </p>
             </NavLink>
@@ -271,7 +271,7 @@ const Footer = () => {
               <span className="pt-1 ">
                 <MdOutlineCircle />
               </span>
-              <p className="hover:text-white mx-2 pb-2 text-gray-400 text-[13px] font-medium ">
+              <p className="hover:text-white  pb-2 text-gray-400 text-[13px] font-medium ">
                 Alumni
               </p>
             </NavLink>
@@ -283,7 +283,7 @@ const Footer = () => {
               <span className="pt-1 ">
                 <MdOutlineCircle />
               </span>
-              <p className="hover:text-white mx-2 pb-2 text-gray-400 text-[13px] font-medium ">
+              <p className="hover:text-white  pb-2 text-gray-400 text-[13px] font-medium ">
                 Athletics
               </p>
             </NavLink>
@@ -301,7 +301,7 @@ const Footer = () => {
                   <span className="pt-1 ">
                     <BiWorld />
                   </span>
-                  <p className="hover:text-white mx-2 pb-2 text-gray-400 text-[13px] font-medium ">
+                  <p className="hover:text-white  pb-2 text-gray-400 text-[13px] font-medium ">
                     16-2, Best Avenue Street, CA 23653, USA
                   </p>
                 </p>
@@ -309,7 +309,7 @@ const Footer = () => {
                   <span className="pt-1 ">
                     <MdPhoneIphone />
                   </span>
-                  <p className="hover:text-white mx-2 pb-2 text-gray-400 text-[13px] font-medium ">
+                  <p className="hover:text-white  pb-2 text-gray-400 text-[13px] font-medium ">
                     +1 998 71 150 30 20
                   </p>
                 </p>
@@ -317,7 +317,7 @@ const Footer = () => {
                   <span className="pt-1 ">
                     <BsPhoneFlip />
                   </span>
-                  <p className="hover:text-white mx-2 pb-2 text-gray-400 text-[13px] font-medium ">
+                  <p className="hover:text-white  pb-2 text-gray-400 text-[13px] font-medium ">
                     +1 998 71 150 30 30
                   </p>
                 </p>
@@ -325,7 +325,7 @@ const Footer = () => {
                   <span className="pt-1 ">
                     <MdOutlineMailOutline />
                   </span>
-                  <p className="hover:text-white mx-2 pb-2 text-gray-400 text-[13px] font-medium ">
+                  <p className="hover:text-white  pb-2 text-gray-400 text-[13px] font-medium ">
                     info@stylemixthemes.com
                   </p>
                 </p>
@@ -333,7 +333,7 @@ const Footer = () => {
                   <span className="pt-1 ">
                     <BsStopwatch />
                   </span>
-                  <p className="hover:text-white mx-2 pb-2 text-gray-400 text-[13px] font-medium ">
+                  <p className="hover:text-white  pb-2 text-gray-400 text-[13px] font-medium ">
                     Mon — Sat: 9AM — 6PM
                   </p>
                 </p>

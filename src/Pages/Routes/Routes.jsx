@@ -16,6 +16,10 @@ import News from "../Home/News/News";
 import Newscards from "../Home/News/Newscards";
 import Contact from "../Home/Contact/Cantact";
 import Dashboard from "../Home/Dashboard/Dashboard";
+import SignUP from "../Home/Authintication/SignUP";
+import LogIn from "../Home/Authintication/LogIn";
+import Dashcenter from "../Home/Dashboard/Dashcenter";
+import Rechart from "../Home/Dashboard/Rechart";
 
 
 
@@ -69,6 +73,10 @@ import Dashboard from "../Home/Dashboard/Dashboard";
           element:<News/>,  
         },
         {
+          path: "/rechart",
+          element:<Rechart/>,  
+        },
+        {
           path: "/newsCard",
           element:<Newscards/>,
           loader: () =>fetch("http://localhost:5000/totalProducts")  
@@ -78,11 +86,29 @@ import Dashboard from "../Home/Dashboard/Dashboard";
           path: "/contact",
           element:<Contact/>,  
         },
+        {
+          path: "/signup",
+          element:<SignUP/>,  
+        },
+        {
+          path: "/login",
+          element:<LogIn/>,  
+        },
        
       ],
     },
     {
         path: '/dashboard',
         element: <Dashboard/>, 
+        children:[
+          {
+          path: "/dashboard",
+          element:<Dashcenter/>,
+        },
+        //   {
+        //   path: "/dashboard/dashcenter",
+        //   element:<Dashcenter/>,
+        // },
+      ]
     }
   ]);
