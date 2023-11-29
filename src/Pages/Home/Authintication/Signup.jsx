@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { createContext, useState } from "react";
 import "./Signup.css";
 import { FcLock } from "react-icons/fc";
 import { FcFeedback } from "react-icons/fc";
@@ -7,9 +7,10 @@ import { NavLink, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
 import app from "./firebaseconfig";
-
+import Swal from "sweetalert2";
+import 'animate.css';
 // import useFirebase from "./useFirebase";
-
+export const AuthContext = createContext();
 const auth = getAuth(app);
 const googleProvider = new GoogleAuthProvider();
 const SignUP = () => {
@@ -26,7 +27,16 @@ const SignUP = () => {
     e.preventDefault()
     axios.post('http://localhost:5000/register',{name, email, password})
     .then(result => {console.log(result)
-      navigate('/')
+      setUser(result.user);
+
+      navigate('/',)
+      Swal.fire({
+        position: "top-center",
+  icon: "success",
+  title: "Your work has been saved",
+  showConfirmButton: false,
+  timer: 3000}
+      )
     })
     .catch(err=> console.log(err))
    }
@@ -50,7 +60,7 @@ const SignUP = () => {
       </h1>
       <form onSubmit={handleSubmit} action="">
       <div className="flex-signup pt-3   m-auto justify-center ">
-        <div className="m-auto justify-center ">
+        <div className="m-auto justify-center animate__animated animate__fadeInRight ">
           <div className="group  pt-5">
             <span className="icon">
               <FcReading color="text-gray-950 pb-2" size={25} />
@@ -110,7 +120,7 @@ const SignUP = () => {
             </div>
           </div>
         </div>
-        <div className="px-3">
+        <div className="px-3 animate__animated animate__fadeInDown">
           <img
             className="img-shadow pt-40 mb-5   justify-center m-auto"
             src="https://i.ibb.co/r3vGsxd/books-removebg-preview.png"

@@ -259,7 +259,7 @@ const Naves = () => {
             </li>
 
             <li className="pr-4  relative group text-white">
-              <NavLink as={NavLink} className="nav-link hover:opacity-50" to="">
+              <NavLink  to="/news" as={NavLink} className="nav-link hover:opacity-50" >
                 News
               </NavLink>
               <div className="absolute  top-0 -left-68 transition group-hover:translate-y-5 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-500 ease-in-out group-hover:transform z-50  min-w-[200px]  transform ">
@@ -421,7 +421,6 @@ const Naves = () => {
         </div>
       </div>
 
-      {/* max-w-[1500px] m-auto pt-3 pb-3  flex items-center justify-between mx-auto */}
     </>
   );
 };

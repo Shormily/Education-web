@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import Tab from "../../Tab/Tab";
 // import CountUp from "react-countup";
 
 const Campus = () => {
@@ -100,8 +101,12 @@ const Campus = () => {
               />
               <p className=" mx-5 mb-3 mb-4 mt-4 pb-8 ">Our Teachers</p>
             </div>
+          
           </div>
-        </div></div>
+        
+        </div>
+        
+        </div>
         
         </>
     );

@@ -3,10 +3,18 @@ import { FcFeedback } from "react-icons/fc";
 import { FcUnlock } from "react-icons/fc";
 import axios from "axios";
 import { useState } from "react";
-
+import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
+import app from "./firebaseconfig";
+import Swal from "sweetalert2";
+import 'animate.css';
+const auth = getAuth(app);
+const googleProvider = new GoogleAuthProvider();
 const LogIn = () => {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
+  const [loading, setLoading] = useState(true);
+  const [user, setUser] = useState(null);
+  const [error, setError] = useState("");
   const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -16,10 +24,37 @@ const LogIn = () => {
         console.log(result);
         if(result.data === "Success"){
           navigate("/");
+          Swal.fire({
+            position: "top-center",
+      icon: "success",
+      title: "Your work has been saved",
+      showConfirmButton: false,
+      timer: 3000}
+          )
         }
       
       })
       .catch((err) => console.log(err));
+  };
+
+  const signInUsingGoogle = () => {
+    setLoading(true);
+    signInWithPopup(auth, googleProvider)
+      .then((result) => {
+        setUser(result.user);
+        navigate('/')
+        Swal.fire({
+          position: "top-center",
+    icon: "success",
+    title: "Your work has been saved",
+    showConfirmButton: false,
+    timer: 3000}
+        )
+      })
+      .catch((error) => {
+        
+        setError(error.message);
+      });
   };
   return (
     <>
@@ -29,7 +64,7 @@ const LogIn = () => {
         </h1>
         <form onSubmit={handleSubmit} action="">
           <div className="flex-signup pt-3  m-auto justify-center ">
-            <div className="m-auto justify-center ">
+            <div className="m-auto justify-center animate__animated animate__fadeInDown">
               <div className="group pt-8 ">
                 <div className="group pt-8 ">
                   <span className="icon">
@@ -76,7 +111,7 @@ const LogIn = () => {
                 </div>
                 <div className="  pt-4 ">
                   <div>
-                    <button className="btnsign lg:w-[180px] sm:w-full md:w-full  text-center  text-grey-950 shadow-lg">
+                    <button onClick={signInUsingGoogle} className="btnsign lg:w-[180px] sm:w-full md:w-full  text-center  text-grey-950 shadow-lg">
                       Sign In Google
                       <span></span>
                     </button>
@@ -84,7 +119,7 @@ const LogIn = () => {
                 </div>
               </div>
             </div>
-            <div className="px-3 img-shadows">
+            <div className="px-3 img-shadows animate__animated animate__fadeInRight ">
               <img
                 className=" pt-12 mb-5 px-12 imges  justify-center m-auto"
                 src="https://i.ibb.co/gd7xgpt/kholabook-removebg-preview.png"

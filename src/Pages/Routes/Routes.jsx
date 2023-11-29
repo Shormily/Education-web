@@ -20,6 +20,7 @@ import SignUP from "../Home/Authintication/SignUP";
 import LogIn from "../Home/Authintication/LogIn";
 import Dashcenter from "../Home/Dashboard/Dashcenter";
 import Rechart from "../Home/Dashboard/Rechart";
+import PrivateRoute from "../Home/Authintication/PrivateRoute";
 
 
 
@@ -38,7 +39,7 @@ import Rechart from "../Home/Dashboard/Rechart";
         },
         {
           path: "/admission",
-          element:<Admission/>,  
+          element:<PrivateRoute><Admission/></PrivateRoute> ,  
         },
         {
           path: "/administrator",
@@ -70,7 +71,7 @@ import Rechart from "../Home/Dashboard/Rechart";
         },
         {
           path: "/news",
-          element:<News/>,  
+          element:<PrivateRoute><News/></PrivateRoute>,  
         },
         {
           path: "/rechart",
@@ -78,13 +79,13 @@ import Rechart from "../Home/Dashboard/Rechart";
         },
         {
           path: "/newsCard",
-          element:<Newscards/>,
+          element:<PrivateRoute><Newscards/></PrivateRoute>,
           loader: () =>fetch("http://localhost:5000/totalProducts")  
         },
       
         {
           path: "/contact",
-          element:<Contact/>,  
+          element:<PrivateRoute><Contact/></PrivateRoute> ,  
         },
         {
           path: "/signup",
@@ -99,7 +100,7 @@ import Rechart from "../Home/Dashboard/Rechart";
     },
     {
         path: '/dashboard',
-        element: <Dashboard/>, 
+        element:<PrivateRoute><Dashboard/></PrivateRoute>, 
         children:[
           {
           path: "/dashboard",
