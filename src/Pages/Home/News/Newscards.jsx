@@ -13,14 +13,15 @@ const Newscards = () => {
   const totalPages = Math.ceil(totalProducts / itemsPerPage);
   console.log(totalPages);
 
-  const pageNumbers = [...Array(totalPages).keys()];
+  const pageNumbers = [...Array(totalPages || 4).keys()];
 
   useEffect(() => {
     async function fetchData() {
       const response = await fetch(
+       
         `https://education-server-orpin.vercel.app/products?page=${currentPage}&limit=${itemsPerPage}`
       );
-
+     
       const data = await response.json();
       setProducts(data);
     }
@@ -49,16 +50,16 @@ const Newscards = () => {
       <div className="flex-container gap-12 max-w-[1600px] justify-center m-auto">
         <div className="w-full lg:w-[80%]">
           <div className="flex-card  py-12 ">
-            {products.map((product) => {
+            {products?.map((product) => {
               return (
                 <>
                   <div className="card py-8 justify-center m-auto px-8 banner-text">
                     <div className="content">
                       <div className="">
-                        <img className="round" src={product.img} alt="" />
+                        <img className="round" src={product?.img} alt="" />
                       </div>
-                      <p className="text-2xl "> {product.title}</p>
-                      <p className="para">{product.text}</p>
+                      <p className="text-2xl "> {product?.title}</p>
+                      <p className="para">{product?.text}</p>
                       {/* <p className="para">{product.Net_Worth}</p> */}
                       <button
                         onClick={() => handleCart(product)}
@@ -78,7 +79,7 @@ const Newscards = () => {
             {/* <p>
               current page:{currentPage} and items per page:{itemsPerPage}
             </p> */}
-            {pageNumbers.map((number) => (
+            {pageNumbers?.map((number) => (
               <button
                 key={number}
                 className={currentPage === number ? "selected" : ""}
@@ -95,7 +96,7 @@ const Newscards = () => {
               value={itemsPerPage}
               onChange={handleSelectChange}
             >
-              {options.map((option) => (
+              {options?.map((option) => (
                 <option className="px-4" key={option} value={option}>
                   Please choose {option}
                 </option>
@@ -106,7 +107,7 @@ const Newscards = () => {
         <div className="pt-24 bg-gray-100 banner-text px-8 w-full lg:w-[20%] ">
           <div className="text">
             <h2>Order Summary</h2>
-            <h4>Total: {newSinger.length}</h4>
+            <h4>Total: {newSinger?.length}</h4>
             <NavLink
               as={NavLink}
               to="/dashboard"
@@ -119,8 +120,8 @@ const Newscards = () => {
             </NavLink>
             {/* <h4>Net Worth: {total} Millon</h4> */}
             <ul>
-              {newSinger.map((product) => (
-                <li key={product.id}>{product.name}</li>
+              {newSinger?.map((product) => (
+                <li key={product?.id}>{product?.name}</li>
               ))}
             </ul>
           </div>
