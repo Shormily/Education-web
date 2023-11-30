@@ -38,8 +38,12 @@ import PrivateRoute from "../Home/Authintication/PrivateRoute";
           element:<About></About>,  
         },
         {
+          path: "/contact",
+          element:<Contact></Contact>,  
+        },
+        {
           path: "/admission",
-          element:<PrivateRoute><Admission/></PrivateRoute> ,  
+          element: <Admission/>,  
         },
         {
           path: "/administrator",
@@ -71,7 +75,7 @@ import PrivateRoute from "../Home/Authintication/PrivateRoute";
         },
         {
           path: "/news",
-          element:<PrivateRoute><News/></PrivateRoute>,  
+          element:<News/>,  
         },
         {
           path: "/rechart",
@@ -79,8 +83,8 @@ import PrivateRoute from "../Home/Authintication/PrivateRoute";
         },
         {
           path: "/newsCard",
-          element:<PrivateRoute><Newscards/></PrivateRoute>,
-          loader: () =>fetch("http://localhost:5000/totalProducts")  
+          element:<Newscards/>,
+          loader: () =>fetch("https://education-server-orpin.vercel.app/totalProducts")  
         },
       
         {
@@ -100,7 +104,7 @@ import PrivateRoute from "../Home/Authintication/PrivateRoute";
     },
     {
         path: '/dashboard',
-        element:<PrivateRoute><Dashboard/></PrivateRoute>, 
+        element: <Dashboard/>, 
         children:[
           {
           path: "/dashboard",

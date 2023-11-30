@@ -25,7 +25,7 @@ const SignUP = () => {
   const navigate = useNavigate()
    const handleSubmit = (e) =>{
     e.preventDefault()
-    axios.post('http://localhost:5000/register',{name, email, password})
+    axios.post('https://education-server-orpin.vercel.app/register',{name, email, password})
     .then(result => {console.log(result)
       setUser(result.user);
 

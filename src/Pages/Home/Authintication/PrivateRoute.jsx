@@ -1,20 +1,21 @@
 // import  { useContext } from 'react';
 
+import { useState } from 'react';
 import { Navigate, useLocation } from 'react-router-dom';
-// import { AuthContext } from './Signup';
-// import { useContext } from 'react';
+
+
 
 const PrivateRoute = (children) => {
-    // const {user, loading} = useContext(AuthContext);
+  
     const location = useLocation()
     
-    // if(loading){
-    //     return<progress className='progress w-56'></progress>
-    // }
+    if(loading){
+        return
+    }
 
-    // if(user){
-    //     return children;
-    // }
+    if(user){
+        return children;
+    }
     return<Navigate to="/login" state={{from:location}}  replace></Navigate> ;
 
 };
