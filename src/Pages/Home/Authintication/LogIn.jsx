@@ -6,7 +6,7 @@ import { useState } from "react";
 import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
 import app from "./firebaseconfig";
 import Swal from "sweetalert2";
-import 'animate.css';
+import "animate.css";
 const auth = getAuth(app);
 const googleProvider = new GoogleAuthProvider();
 const LogIn = () => {
@@ -19,20 +19,22 @@ const LogIn = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("https://education-server-orpin.vercel.app/login", {  email, password })
+      .post("https://education-server-orpin.vercel.app/login", {
+        email,
+        password,
+      })
       .then((result) => {
         console.log(result);
-        if(result.data === "Success"){
+        if (result.data === "Success") {
           navigate("/");
           Swal.fire({
             position: "top-center",
-      icon: "success",
-      title: "Your work has been saved",
-      showConfirmButton: false,
-      timer: 3000}
-          )
+            icon: "success",
+            title: "LogIn successfully",
+            showConfirmButton: false,
+            timer: 3000,
+          });
         }
-      
       })
       .catch((err) => console.log(err));
   };
@@ -42,17 +44,18 @@ const LogIn = () => {
     signInWithPopup(auth, googleProvider)
       .then((result) => {
         setUser(result.user);
-        navigate('/')
+        navigate("/");
         Swal.fire({
           position: "top-center",
-    icon: "success",
-    title: "Your work has been saved",
-    showConfirmButton: false,
-    timer: 3000}
-        )
+          icon: "success",
+          title: "Successfully SignIn",
+          showConfirmButton: false,
+          timer: 3000,
+        });
+     
+     
       })
       .catch((error) => {
-        
         setError(error.message);
       });
   };
@@ -111,7 +114,10 @@ const LogIn = () => {
                 </div>
                 <div className="  pt-4 ">
                   <div>
-                    <button onClick={signInUsingGoogle} className="btnsign lg:w-[180px] sm:w-full md:w-full  text-center  text-grey-950 shadow-lg">
+                    <button
+                      onClick={signInUsingGoogle}
+                      className="btnsign lg:w-[180px] sm:w-full md:w-full  text-center  text-grey-950 shadow-lg"
+                    >
                       Sign In Google
                       <span></span>
                     </button>

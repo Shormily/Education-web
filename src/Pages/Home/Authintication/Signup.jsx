@@ -33,7 +33,7 @@ const SignUP = () => {
       Swal.fire({
         position: "top-center",
   icon: "success",
-  title: "Your work has been saved",
+  title: "SignIn successfully",
   showConfirmButton: false,
   timer: 3000}
       )
@@ -47,6 +47,13 @@ const SignUP = () => {
       .then((result) => {
         setUser(result.user);
         navigate('/')
+        Swal.fire({
+          position: "top-center",
+          icon: "success",
+          title: "Successfully SignIn",
+          showConfirmButton: false,
+          timer: 3000,
+        });
       })
       .catch((error) => {
         
