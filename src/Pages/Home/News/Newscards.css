@@ -3,7 +3,7 @@
    margin-bottom: 50px;
 }
 
-.flex-card{
+.flex-cards{
    display: grid;
    grid-template-columns: repeat(4, 1fr);
    grid-gap: 2rem;
@@ -16,7 +16,7 @@
 } */
 
 /* Crd design */
-.card {
+.cards {
    position: relative;
    display: flex;
    align-items: center;
@@ -30,13 +30,13 @@
    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
  }
 
- .card:hover{
+ .cards:hover{
    color: #fff;
  }
 
  
  
- .content {
+ .contents {
    display: flex;
    flex-direction: column;
    align-items: flex-start;
@@ -44,16 +44,16 @@
    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
  }
  
- .content .heading {
+ .contents .heading {
    font-weight: 700;
    font-size: 32px;
  }
  
- .content .para {
+ .contents .para {
    line-height: 1.5;
  }
  
- .content .btncard {
+ .contents .btncard {
    color: #e8e8e8;
    text-decoration: none;
    padding: 10px;
@@ -65,7 +65,7 @@
    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
  }
  
- .card::before {
+ .cards::before {
    content: "";
    position: absolute;
    left: 0;
@@ -77,21 +77,21 @@
    transition: all 0.7s cubic-bezier(0.23, 1, 0.320, 1);
  }
  
- .card:hover::before {
+ .cards:hover::before {
    height: 100%;
    
  }
  
- .card:hover {
+ .cards:hover {
    box-shadow: none;
  }
  
- .card:hover .btncard {
+ .cards:hover .btncard {
    color: #212121;
    background: #e8e8e8;
  }
  
- .content .btncard:hover {
+ .contents .btncard:hover {
    outline: 2px solid #e8e8e8;
    background: transparent;
    color: #e8e8e8;
@@ -109,7 +109,7 @@
    /* height: 200px; */
  }
  
- .content .btncard:active {
+ .contents .btncard:active {
    box-shadow: none;
  }
  
@@ -147,25 +147,37 @@
 /* End selectors */
 
 @media (max-width: 767px) {
-  .flex-card{
+  .flex-cards{
       grid-template-columns: repeat(2,1fr);
   }
   
 }
 @media (max-width: 1018px) {
-  .flex-card{
+  .flex-cards{
       grid-template-columns: repeat(2,1fr);
   }
   
 }
+@media (max-width: 1170px) {
+  .flex-cards{
+      grid-template-columns: repeat(2,1fr);
+  }
+  
+}
+@media (max-width: 1590px) {
+  .flex-cards{
+      grid-template-columns: repeat(3,1fr);
+  }
+  
+}
 @media (max-width: 1116px) {
-  .flex-card{
+  .flex-cards{
       grid-template-columns: repeat(2,1fr);
   }
   
 }
 @media (max-width: 650px) {
-  .flex-card{
+  .flex-cards{
       grid-template-columns: repeat(1,1fr);
   }
   

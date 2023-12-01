@@ -12,6 +12,10 @@
     color: #12355c3f;
 
 }
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
 
 .icn{
     display: inline-block;
@@ -54,6 +58,38 @@
 }
 
 .foter-text{
-   
+    font-size: 15px;
+    font-family: "Libre Baskerville", serif;
     font-weight: 300;
+}
+
+
+
+@media (max-width: 540px) {
+    .footer-grid{
+       
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+}
+@media (max-width: 410px) {
+    .footer-grid{
+        
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+}
+@media (max-width: 310px) {
+    .footer-grid{
+        
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+}
+@media (max-width: 680px) {
+    .footer-grid{
+      
+        grid-template-columns: repeat(2,1fr);
+    }
+    
 }

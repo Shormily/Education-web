@@ -27,7 +27,7 @@ const Cafetria = () => {
             Administrator
           </NavLink>
         </div>
-        <div className="flex-container px-4 study-num max-w-[1300px] m-auto">
+        <div className="flex-container gap-24 px-4 study-num max-w-[1300px] m-auto">
           <div className=" ">
             <h1 className="text-4xl mt-12 pb-3">History</h1>
             <p className="text-[21px] text-justify pt-5 pb-5">
@@ -61,7 +61,7 @@ const Cafetria = () => {
               />
             </div>
           </div>
-          <div className="   pt-12 w-full  px-24  a">
+          <div className=" md:pt-4 sm:pt-0 lg:pt-12 w-full  ">
             <div className="bg-white ">
               <div className="max-w-[1200px]  m-auto pb-4 ">
                 <div
@@ -73,7 +73,7 @@ const Cafetria = () => {
                   }}
                 />
               </div>
-              <p className=" mx-5 mb-4 mt-2 ">History</p>
+              <p className=" mx-5 mb-4 mt-2">History</p>
               <div
                 style={{
                   justifyContent: "center",
@@ -84,7 +84,7 @@ const Cafetria = () => {
                 }}
                 className="mx-5"
               />
-              <p className=" mx-5 mb-4 mt-4">Administration</p>
+              <p className=" mx-5 mb-4 mt-4 text-[#991b1b]">Administration</p>
               <div
                 style={{
                   justifyContent: "center",
@@ -106,7 +106,7 @@ const Cafetria = () => {
                 }}
                 className="mx-5"
               />
-              <p className=" mx-5 mb-4 mt-4 text-[#991b1b]">Cafeteria</p>
+              <p className=" mx-5 mb-4 mt-4">Cafeteria</p>
               <div
                 style={{
                   justifyContent: "center",

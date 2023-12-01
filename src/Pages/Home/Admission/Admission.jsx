@@ -1,4 +1,5 @@
 import "./Admission.css";
+import Study from "../Study/Study"
 const Admission = () => {
   const items = [
     {
@@ -127,9 +128,9 @@ const Admission = () => {
         </div>
       </div>
 
-      <div className="banner-text pb-6">
+      <div className="banner-text pb-6 max-w-[1400px] m-auto">
         <p className="text-center text-3xl pt-12">The Application Timeline</p>
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 pb-16 max-w-[1100px] m-auto">
+        <div className="grid gap-24 pb-16 ">
           {items?.map((item) => (
             <>
               <div>
@@ -148,45 +149,7 @@ const Admission = () => {
         </div>
       </div>
       <div>
-        <div className="bg-gray-100 pt-12 pb-12">
-          <div className="study-num max-w-[1400px] m-auto ">
-            <h1 className="text-4xl pb-8 px-12 mx-3 pt-2 text-center ">
-              Studying at Smart
-            </h1>
-            <div className="study-card">
-              <section className="container">
-                <div className="cards grids">
-                  {cards?.map((card) => (
-                    <>
-                      <div className="card">
-                        <div className="img-box">
-                          <img className="w-full" src={card?.img} alt="" />
-                        </div>
-                        <div className="card-contents">
-                          <h1 className="card-heading">{card?.title}</h1>
-                          <p className="card-text ">{card?.text}</p>
-                          <h3 className="text-[15px] text-white mx-5 pb-3">
-                            Read More
-                          </h3>
-                          <div className="mr-48 px-4  ">
-                            <div
-                              style={{
-                                // justifyContent: "center",
-                                // alignItems: "center",
-                                backgroundColor: "#fff",
-                                height: "2px",
-                              }}
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </>
-                  ))}
-                </div>
-              </section>
-            </div>
-          </div>
-        </div>
+        <Study/>
       </div>
     </>
   );

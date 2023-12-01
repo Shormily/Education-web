@@ -146,7 +146,7 @@ const Study = () => {
       <div className="study-card">
         
       <section className="container">
-        <div className="cards grid">
+        <div className="cards grid px-1">
             <div className="card">
                 <div className="img-box">
                     <img className="w-full" src="https://i.ibb.co/TPhKV6B/img10.jpg" alt="" />
@@ -170,7 +170,7 @@ const Study = () => {
             </div>
             <div className="card">
                 <div className="img-box">
-                    <img  src="https://i.ibb.co/ZNY3ynC/img11-1.jpg" alt="" />
+                    <img className="w-full" src="https://i.ibb.co/ZNY3ynC/img11-1.jpg" alt="" />
                 </div>
                 <div className="card-content">
                 <h1 className="card-heading">Graduation Admissions</h1>
@@ -195,6 +195,27 @@ const Study = () => {
                 </div>
                 <div className="card-content">
                 <h1 className="card-heading">Continuing Education</h1>
+                <p className="card-text ">Christopher Kane is the 23rd president of Smart University, and the Chris Argyris</p>
+                <h3 className="text-[15px] text-white mx-5 pb-3">Read More</h3>
+                <div className="mr-48 px-4  ">
+                <div
+                  style={{
+                    // justifyContent: "center",
+                    // alignItems: "center",
+                    backgroundColor: "#fff",
+                    height: "2px",
+                   
+                  }}
+                />
+              </div>
+                </div>
+            </div>
+            <div className="card">
+                <div className="img-box">
+                    <img className="w-full" src="https://i.ibb.co/ZNY3ynC/img11-1.jpg" alt="" />
+                </div>
+                <div className="card-content">
+                <h1 className="card-heading">Graduation Admissions</h1>
                 <p className="card-text ">Christopher Kane is the 23rd president of Smart University, and the Chris Argyris</p>
                 <h3 className="text-[15px] text-white mx-5 pb-3">Read More</h3>
                 <div className="mr-48 px-4  ">

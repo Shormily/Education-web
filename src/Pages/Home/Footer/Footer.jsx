@@ -35,7 +35,7 @@ const Footer = () => {
 
       <div className="          bg-[#002147] text-white cursor-pointer pt-2  pb-3 ">
         <div
-          className=" grid lg:grid-cols-3   max-w-[1200px] pt-12 m-auto gap-8  md:grid-cols-2 sm:grid-cols-1 m-auto flex flex-wrap items-center lg:justify-between mx-auto p-8 footer-link
+          className=" max-w-[1100px] px-8 m-auto footer-grid footer-link
         "
         >
           <div className="  mb-2 pt-12 text-[14px]">
@@ -224,7 +224,7 @@ const Footer = () => {
                 <MdOutlineCircle />
               </span>
               <p className="hover:text-white  pb-2 text-gray-400 text-[13px] font-medium ">
-                Applications FAQ
+                Applications  FAQ 
               </p>
             </NavLink>
             <NavLink
@@ -287,8 +287,9 @@ const Footer = () => {
                 Athletics
               </p>
             </NavLink>
+         
           </div>
-          
+
           <div className=" pt-12  ">
             <div className="items-center ">
               <img
@@ -343,7 +344,7 @@ const Footer = () => {
               className=" w-full  md:w-auto"
               // id="navbar-default"
             >
-              <ul className="font-medium flex-container   ">
+              <ul className="font-medium  flex   ">
                 <li className="mt-3">
                   <a
                     href=" https://www.linkedin.com/company/cratmateai-technology/?viewAsMember=true "
@@ -360,24 +361,7 @@ const Footer = () => {
                     <i className="fa-brands fa-google-plus-g icn"></i>
                   </a>
                 </li>
-                <li className="mt-3">
-                  <p>
-                    <i className="fa-brands fa-twitter icn  "></i>
-                  </p>
-                </li>
-                <li className="mt-3">
-                  <p>
-                    <i className="fa-brands fa-youtube icn "></i>
-                  </p>
-                </li>
-                <li className="mt-3">
-                  <a
-                    href="mailto:umesh@cratmate.com"
-                    className="font-normal text-[13px]"
-                  >
-                    <i className="fa-brands fa-instagram icn"></i>
-                  </a>
-                </li>
+              
                 <li className="mt-3">
                   <a
                     href="mailto:umesh@cratmate.com"
@@ -390,7 +374,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="max-w-[1200px]  m-auto pb-4 ">
+        <div className="max-w-[1200px] foter-text px-2  m-auto pb-4 ">
           <div
             style={{
               justifyContent: "center",

@@ -27,7 +27,7 @@ const OurTeacher = () => {
           Administrator
         </NavLink>
       </div> 
-      <div className="flex-container gap-4 study-num max-w-[1300px] m-auto">
+      <div className="flex-container gap-24 study-num max-w-[1300px] m-auto">
           <div className="lg:col-span-2 md:col-span-2">
             <h1 className="text-4xl mt-12 pb-3">Our Teachers</h1>
             <p className="text-[21px] text-justify pt-5 pb-2">
@@ -41,7 +41,7 @@ const OurTeacher = () => {
             
             
           </div>
-          <div className="   pt-12   px-24 w-full">
+          <div className=" md:pt-4 sm:pt-0 lg:pt-12 w-full  ">
             <div className="bg-white ">
               <div className="max-w-[1200px]  m-auto pb-4 ">
                 <div
@@ -64,7 +64,7 @@ const OurTeacher = () => {
                 }}
                 className="mx-5"
               />
-              <p className=" mx-5 mb-4 mt-4 ">Administration</p>
+              <p className=" mx-5 mb-4 mt-4 text-[#991b1b]">Administration</p>
               <div
                 style={{
                   justifyContent: "center",
@@ -97,7 +97,7 @@ const OurTeacher = () => {
                 }}
                 className="mx-5"
               />
-              <p className=" mx-5 mb-3 mb-4 mt-4 pb-8 text-[#991b1b]">Our Teachers</p>
+              <p className=" mx-5 mb-3 mb-4 mt-4 pb-8">Our Teachers</p>
             </div>
           </div>
         </div></div>

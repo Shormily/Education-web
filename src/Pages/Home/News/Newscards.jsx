@@ -18,10 +18,9 @@ const Newscards = () => {
   useEffect(() => {
     async function fetchData() {
       const response = await fetch(
-       
         `https://education-server-orpin.vercel.app/products?page=${currentPage}&limit=${itemsPerPage}`
       );
-     
+
       const data = await response.json();
       setProducts(data);
     }
@@ -49,12 +48,12 @@ const Newscards = () => {
     <div className="">
       <div className="flex-container gap-12 max-w-[1600px] justify-center m-auto">
         <div className="w-full lg:w-[80%]">
-          <div className="flex-card  py-12 ">
+          <div className="flex-cards  py-12 ">
             {products?.map((product) => {
               return (
                 <>
-                  <div className="card py-8 justify-center m-auto px-8 banner-text">
-                    <div className="content">
+                  <div className="cards py-8 justify-center m-auto px-8 banner-text">
+                    <div className="contents">
                       <div className="">
                         <img className="round" src={product?.img} alt="" />
                       </div>
@@ -65,7 +64,9 @@ const Newscards = () => {
                         onClick={() => handleCart(product)}
                         className="btncard  "
                       >
-                   <span className="font-medium flex gap-2"><GiBasket size={20} />    Add To Card</span> 
+                        <span className="font-medium flex gap-2">
+                          <GiBasket size={20} /> Add To Card
+                        </span>
                       </button>
                     </div>
                   </div>
@@ -104,7 +105,7 @@ const Newscards = () => {
             </select>
           </div>
         </div>
-        <div className="pt-24 bg-gray-100 banner-text px-8 w-full lg:w-[20%] ">
+        <div className="pt-24 pb-24 bg-gray-100 banner-text px-8 w-full lg:w-[20%] ">
           <div className="text">
             <h2>Order Summary</h2>
             <h4>Total: {newSinger?.length}</h4>
@@ -113,7 +114,7 @@ const Newscards = () => {
               to="/dashboard"
               className=" banner-text text-sm  textsignup"
             >
-              <button className="btnsign lg:w-[220px] mt-5 sm:w-full md:w-full  text-center  text-grey-950 shadow-lg">
+              <button className="btnsign lg:w-full mt-5 sm:w-full md:w-full  text-center  text-grey-950 shadow-lg">
                 Order Now
                 <span></span>
               </button>
