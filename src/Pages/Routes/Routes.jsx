@@ -116,4 +116,7 @@ import PrivateRoute from "../Home/Authintication/PrivateRoute";
         // },
       ]
     }
+    
   ]);
+
+  

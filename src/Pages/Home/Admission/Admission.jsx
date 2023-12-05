@@ -130,7 +130,7 @@ const Admission = () => {
 
       <div className="banner-text pb-6 max-w-[1400px] m-auto">
         <p className="text-center text-3xl pt-12">The Application Timeline</p>
-        <div className="grid gap-24 pb-16 ">
+        <div className="grids gap-24 pb-16">
           {items?.map((item) => (
             <>
               <div>

@@ -9,7 +9,7 @@
     font-weight: 400;
 }
 
-.study-card{
+.study-cardes{
     /* box-sizing: border-box; */
     padding: 0;
     margin: 0;
@@ -27,29 +27,28 @@
     object-fit: cover;
 }
 
-.grid{
+.grided{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    /* justify-content:center; */
-    grid-gap:2rem;
-    /* text-align: center; */
-    width: 90%;
-    margin: 0;
-
+    grid-gap:5rem;
+    width: 100%;
+    margin: auto;
 }
 
-.card{
+.cardes{
     display: block;
     overflow: hidden;
-    /* border-radius: 0.6rem; */
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
     cursor: pointer;
     transition: 0.2s;
     position: relative;
-    background-color:rgba(2, 2, 61, 0.985)
+    background-color:rgba(2, 2, 61, 0.985);
+    width: 100%;
+    border-radius: 10px;
+   
 }
 
-.card-content{
+.cardes-content{
     position: absolute;
     background-color: #00214789;
     bottom: 0;
@@ -60,7 +59,7 @@
     transition: 0.7s;
 }
 
-.card-content h1{
+.cardes-content h1{
     margin-left: 20px;
     padding-top: 11px;
     font-weight: 600;
@@ -68,7 +67,7 @@
 }
 
 
-.card-content p{
+.cardes-content p{
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
     font-size: 15px;
@@ -76,7 +75,7 @@
     padding: 1.2rem;
 }
 
-.card-content:hover{
+.cardes-content:hover{
     height: 100%;
     transition: 0.4s;
 }
@@ -84,26 +83,26 @@
 /* ====responsive==== */
 
 @media (max-width: 1024px) {
-    .grid{
+    .grided{
         grid-template-columns: repeat(1,1fr);
     }
     
 }
 @media (max-width: 767px) {
-    .grid{
+    .grided{
         grid-template-columns: repeat(1,1fr);
     }
     
 }
 @media (max-width: 670px) {
-    .grid{
+    .grided{
         
         grid-template-columns: repeat(1,1fr);
     }
     
 }
 @media (max-width: 1314px) {
-    .grid{
+    .grided{
         grid-template-columns: repeat(2,1fr);
         justify-content: center;
         margin: auto;
@@ -111,7 +110,7 @@
     
 }
 @media (max-width: 576px) {
-    .grid{
+    .grided{
         grid-template-columns: repeat(1,1fr);
         justify-content: center;
         margin: auto;

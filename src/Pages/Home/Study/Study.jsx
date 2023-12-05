@@ -9,11 +9,11 @@ const Study = () => {
         {" "}
         <div className="flex max-w-[1400px] m-auto   items-center justify-center ">
           <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 ">
-            <div className="max-w-[500px] m-auto pt-12">
+            <div className="max-w-[500px] m-auto pt-12 px-4">
               <p className="ft-t text-4xl text-gray-950 pb-8 ">
                 Featured media
               </p>
-              <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-2xl hover:shadow-black/10">
+              <div className="group  relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-2xl hover:shadow-black/10">
                 <div className="h-full ">
                   <img
                     className=" w-full  object-cover transition-transform duration-700 group-hover:rotate-3 group-hover:scale-125"
@@ -39,8 +39,8 @@ const Study = () => {
                 calendar.
               </p>
             </div>
-            <div className="pt-12 mt-3">
-              <div className="pt-12 flex">
+            <div className="pt-12 px-4 mt-3">
+              <div className="pt-12  flex">
                 <div className=" pt-3 ">
                   <img
                     className=" w-[120px] h-[80px] object-cover transition-transform duration-700 group-hover:rotate-3 group-hover:scale-125"
@@ -52,7 +52,7 @@ const Study = () => {
                   What happens <br /> if you fall into a <br /> black hole?
                 </p>
               </div>
-              <div className="pt-3 flex">
+              <div className="pt-3  flex">
                 <div className=" pt-3 ">
                   <img
                     className=" w-[120px] h-[80px] object-cover transition-transform duration-700 group-hover:rotate-3 group-hover:scale-125"
@@ -143,17 +143,17 @@ const Study = () => {
       <div className="bg-[#e3e7ea] pt-12 pb-12">
         <div className="study-num max-w-[1400px] m-auto ">
         <h1 className="text-4xl pb-8 px-12 mx-3 pt-12 ">Studying at Smart</h1>
-      <div className="study-card">
+      <div className="study-cardes">
         
-      <section className="container">
-        <div className="cards grid px-1">
-            <div className="card">
+      <section className=" px-4">
+        <div className="grided  px-1">
+            <div className="cardes ">
                 <div className="img-box">
                     <img className="w-full" src="https://i.ibb.co/TPhKV6B/img10.jpg" alt="" />
                 </div>
-                <div className="card-content">
-                <h1 className="card-heading">Undergraduate Admissions</h1>
-                <p className="card-text ">Christopher Kane is the 23rd president of Smart University, and the Chris Argyris</p>
+                <div className="cardes-content">
+                <h1 className="cardes-heading">Undergraduate Admissions</h1>
+                <p className="cardes-text ">Christopher Kane is the 23rd president of Smart University, and the Chris Argyris</p>
                 <h3 className="text-[15px] text-white mx-5 pb-3">Read More</h3>
                 <div className="mr-48 px-4  ">
                 <div
@@ -168,13 +168,13 @@ const Study = () => {
               </div>
                 </div>
             </div>
-            <div className="card">
+            <div className="cardes">
                 <div className="img-box">
                     <img className="w-full" src="https://i.ibb.co/ZNY3ynC/img11-1.jpg" alt="" />
                 </div>
-                <div className="card-content">
-                <h1 className="card-heading">Graduation Admissions</h1>
-                <p className="card-text ">Christopher Kane is the 23rd president of Smart University, and the Chris Argyris</p>
+                <div className="cardes-content">
+                <h1 className="cardes-heading">Graduation Admissions</h1>
+                <p className="cardes-text ">Christopher Kane is the 23rd president of Smart University, and the Chris Argyris</p>
                 <h3 className="text-[15px] text-white mx-5 pb-3">Read More</h3>
                 <div className="mr-48 px-4  ">
                 <div
@@ -189,13 +189,13 @@ const Study = () => {
               </div>
                 </div>
             </div>
-            <div className="card">
+            <div className="cardes">
                 <div className="img-box">
                     <img src="https://i.ibb.co/55v4dzd/img12-1.jpg" alt="" />
                 </div>
-                <div className="card-content">
-                <h1 className="card-heading">Continuing Education</h1>
-                <p className="card-text ">Christopher Kane is the 23rd president of Smart University, and the Chris Argyris</p>
+                <div className="cardes-content">
+                <h1 className="cardes-heading">Continuing Education</h1>
+                <p className="cardes-text ">Christopher Kane is the 23rd president of Smart University, and the Chris Argyris</p>
                 <h3 className="text-[15px] text-white mx-5 pb-3">Read More</h3>
                 <div className="mr-48 px-4  ">
                 <div
@@ -210,13 +210,13 @@ const Study = () => {
               </div>
                 </div>
             </div>
-            <div className="card">
+            <div className="cardes">
                 <div className="img-box">
                     <img className="w-full" src="https://i.ibb.co/ZNY3ynC/img11-1.jpg" alt="" />
                 </div>
-                <div className="card-content">
-                <h1 className="card-heading">Graduation Admissions</h1>
-                <p className="card-text ">Christopher Kane is the 23rd president of Smart University, and the Chris Argyris</p>
+                <div className="cardes-content">
+                <h1 className="cardes-heading">Graduation Admissions</h1>
+                <p className="cardes-text ">Christopher Kane is the 23rd president of Smart University, and the Chris Argyris</p>
                 <h3 className="text-[15px] text-white mx-5 pb-3">Read More</h3>
                 <div className="mr-48 px-4  ">
                 <div
