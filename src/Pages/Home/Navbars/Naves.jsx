@@ -334,7 +334,7 @@ const Naves = ({ header, ...rest }) => {
               </NavLink>
             </li>
 
-            <li className=" pr-4 pt-1  text-white">
+            <li className=" pt-1  text-white">
               <NavLink
                 as={NavLink}
                 className="nav-link hover:opacity-50"
@@ -344,7 +344,10 @@ const Naves = ({ header, ...rest }) => {
               </NavLink>
             </li>
 
-            <li className="pr-4 pt-1 text-white">
+       
+          </ul>
+          <ul>
+          <li className=" pt-1 text-white">
               {!user?.email && (
                 <NavLink
                   as={NavLink}
@@ -380,7 +383,6 @@ const Naves = ({ header, ...rest }) => {
               )}
             </li>
           </ul>
-          
         </React.Fragment>
         <div className="sm:hidden z-10">
           <label className="hamburger">
