@@ -20,7 +20,9 @@ import SignUP from "../Home/Authintication/SignUP";
 import LogIn from "../Home/Authintication/LogIn";
 import Dashcenter from "../Home/Dashboard/Dashcenter";
 import Rechart from "../Home/Dashboard/Rechart";
-import PrivateRoute from "../Home/Authintication/PrivateRoute";
+import PrivateRoute from "./PrivateRoute";
+
+
 
 
 
@@ -35,7 +37,7 @@ import PrivateRoute from "../Home/Authintication/PrivateRoute";
         },
         {
           path: "/about",
-          element:<About></About>,  
+          element:<PrivateRoute><About></About></PrivateRoute> ,  
         },
         {
           path: "/contact",
@@ -89,7 +91,7 @@ import PrivateRoute from "../Home/Authintication/PrivateRoute";
       
         {
           path: "/contact",
-          element:<PrivateRoute><Contact/></PrivateRoute> ,  
+          element:<Contact/>,  
         },
         {
           path: "/signup",
@@ -104,7 +106,7 @@ import PrivateRoute from "../Home/Authintication/PrivateRoute";
     },
     {
         path: '/dashboard',
-        element: <Dashboard/>, 
+        element: <PrivateRoute> <Dashboard/></PrivateRoute>, 
         children:[
           {
           path: "/dashboard",

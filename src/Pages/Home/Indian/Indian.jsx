@@ -1,6 +1,7 @@
 import { BiSolidChevronRight } from "react-icons/bi";
 import "./Indian.css";
 import Swip from "../Swip/Swip";
+import { Link } from "react-router-dom";
 const Indian = () => {
   return (
     <>
@@ -24,13 +25,17 @@ const Indian = () => {
             </p>
 
             <p className="button-container ml-12 mt-5 mb-24">
-              <button className="hover-button px-5 pl-5 py-4 flex">
-                <span className="font-bold">LEARN MORE</span>{" "}
-                <BiSolidChevronRight
-                  className="mx-2 text-red-700 hover:text-white"
-                  size={25}
-                />
-              </button>
+            <Link to={`/dashboard`} >
+            <button className="hover-button px-5 pl-5 py-4 flex">
+              
+              <span className="font-bold">Let’s Explore</span>{" "}
+              <BiSolidChevronRight
+                className="mx-2 text-red-700 hover:text-white"
+                size={25}
+              />
+            </button>
+                    </Link>
+              
             </p>
           </div>
           <div className="max-w-[60%] hidden lg:block ">

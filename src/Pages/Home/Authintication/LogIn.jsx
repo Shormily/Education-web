@@ -26,7 +26,7 @@ const LogIn = () => {
       .then((result) => {
         console.log(result);
         if (result.data === "Success") {
-          navigate("/");
+          navigate("/dashboard");
           Swal.fire({
             position: "top-center",
             icon: "success",
@@ -44,7 +44,7 @@ const LogIn = () => {
     signInWithPopup(auth, googleProvider)
       .then((result) => {
         setUser(result.user);
-        navigate("/");
+        navigate("/dashboard");
         Swal.fire({
           position: "top-center",
           icon: "success",
